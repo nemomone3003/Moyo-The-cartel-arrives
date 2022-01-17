@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 로얄 바디슈트 -->
+	<ThingDef ParentName="Moyo_ApparelBase">
+		<defName>Moyo_CartelRoyalsuit</defName>
+		<label>moyo experimental suit</label>
+		<description>A Peculiar looking bodysuit developed by the cartel. Its their effort to create an elegant wear with decent protection for the wearer. Mostly wore by important personnel of te cartel due to its cost.</description>
+		<graphicData>
+			<texPath>Things/Apparel/MoyoCartelroyalSuit1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Moyo_Depthweave>60</Moyo_Depthweave>
+			<Hyperweave>35</Hyperweave>
+			<Gold>5</Gold>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>37000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>65</Insulation_Cold>
+			<Insulation_Heat>47.5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.2</MoveSpeed>
+			<SocialImpact>0.1</SocialImpact>	
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/MoyoCartelroyalSuit</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Moyo_Executive</li>
+				<li>Psychic</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>			
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>	
+	</ThingDef>
+
+	<!--로열 6티어 코트-->
+	<ThingDef ParentName="Moyo_ApparelBase" Name="Moyo_CartelRobeBase">
+		<defName>Moyo_CartelRobeA</defName>
+		<label>moyo cartel executive coat A</label>	
+		<description>Extravagant clothes worn by the upper class of the lighthouse. Made with advanced matierals and studier than it seems.\n\nThe clothes are engraved with the symbol of one of the three elders.</description>
+		<graphicData>
+			<texPath>Things/Apparel/MoyoCartelCoat1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Moyo_Depthweave>60</Moyo_Depthweave>
+			<Hyperweave>30</Hyperweave>
+			<Gold>5</Gold>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>225</MaxHitPoints>
+			<WorkToMake>32000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.35</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>22</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+		</equippedStatOffsets>			
+		<apparel>
+			<wornGraphicPath>Things/Apparel/MoyoCartelCoat</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Moyo_Executive</li>
+				<li>Psychic</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	<ThingDef ParentName="Moyo_CartelRobeBase">
+		<defName>Moyo_CartelRobeB</defName>
+		<label>moyo cartel executive coat B</label>
+		<graphicData>
+			<texPath>Things/Apparel/MoyoCartelCoatB1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/MoyoCartelCoatB</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<!-- 초인병 슈트 -->
+	<ThingDef ParentName="Moyo_PowerArmorBase">
+		<defName>Moyo_CEsuit</defName>
+		<label>moyo assasin elite suit</label>
+		<description>An advanced suit of armor specifically designed for the most elite operative of the cartel.\n\nIt has thinner armor than conventional powered armor, but it compensates its flaw with greatly improved mobility and built-in damage control unit.</description>
+		<graphicData>
+			<texPath>Things/Apparel/MoyoCEsuit1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>3350</MarketValue>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Mass>12</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.99</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<EquipDelay>11</EquipDelay>
+			<Insulation_Cold>30</Insulation_Cold>
+			<Insulation_Heat>30</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>1.2</MoveSpeed>
+			<MeleeDodgeChance>0.5</MeleeDodgeChance>
+			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/MoyoCEsuit</wornGraphicPath>
+			<layers Inherit="False">
+				<li>OnSkin</li>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Moyo_AssasinElite</li>
+				<li>PrestigeCombatGear</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<!-- 초인병 헬멧 -->
+	<ThingDef ParentName="Moyo_PowerHelmetBase">
+		<defName>Moyo_CEhelmet</defName>
+		<label>moyo assasin elite helmet</label>
+		<description>An advanced helmet specifically designed for the most elite operative of the cartel.\n\nWith various combat assisters installed, it provides exellent protection to the wearer while aiding in combat.</description>
+		<graphicData>
+			<texPath>Things/Apparel/MoyoCEHelmet1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>980</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>7</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<EquipDelay>4</EquipDelay>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.2</AimingDelayFactor>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/MoyoCEHelmet</wornGraphicPath>
+			<tags>
+				<li>Moyo_AssasinElite</li>
+				<li>PrestigeCombatGear</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>		
+
+</Defs>

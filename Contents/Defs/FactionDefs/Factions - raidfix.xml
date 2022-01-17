@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 모요 팩션베이스 -->
+	<FactionDef ParentName="FactionBase" Name="MoyoCartelFactionBase" Abstract="True">
+		<pawnSingular>Moyo</pawnSingular>
+		<pawnsPlural>Moyos</pawnsPlural>
+		<listOrderPriority>30</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>61</configurationListOrderPriority>
+		<canMakeRandomly>true</canMakeRandomly>
+		<leaderTitle>Cartel Field executive</leaderTitle>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<techLevel>Spacer</techLevel>
+		<allowedCultures>
+			<li>Moyo_RefugeeCulture</li>
+		</allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistAbstract</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+		</disallowedMemes>
+		<structureMemeWeights>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">3</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+		</structureMemeWeights>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<geneticVariance>0.7</geneticVariance>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Moyo_Depthweave</li>
+			</thingDefs>
+			<stuffCategoriesToAllow>
+				<li>Metallic</li>
+				<li>Fabric</li>
+			</stuffCategoriesToAllow>
+			<disallowedThingDefs>
+				<li>Leather_Thrumbo</li>
+				<li>Hyperweave</li>
+			</disallowedThingDefs>
+		</apparelStuffFilter>
+		<caravanTraderKinds>
+			<li>Caravan_MoyoCivil_BulkGoods</li>
+			<li>Caravan_MoyoCivil_CombatSupplier</li>
+			<li>Caravan_MoyoCivil_Exotic</li>
+			<li>Caravan_MoyoCivil_PirateMerchant</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">MoyoCartel_Caravan_TributeCollector</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_MoyoCivil_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
+		<raidLootMaker>MoyoRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(500, 100)</li>
+				<!-- Can always use relatively strong pawns, because empire doesn't really have weak ones -->
+				<li>(1000, 150)</li>
+				<li>(2000, 250)</li>
+				<li>(2001, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<!-- 중티어 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<Moyo_CartelTrooper>20</Moyo_CartelTrooper>
+					<Moyo_CartelSmuggler>5</Moyo_CartelSmuggler>
+					<Moyo_CartelLight>5</Moyo_CartelLight>
+					<Moyo_CartelLighMelee>1</Moyo_CartelLighMelee>
+				</options>
+			</li>
+			<!-- 고티어 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>40</commonality>
+				<options>
+					<Moyo_CartelSmuggler>5</Moyo_CartelSmuggler>				
+					<Moyo_CartelLight>10</Moyo_CartelLight>
+					<Moyo_CartelLighMelee>1</Moyo_CartelLighMelee>
+					<MoyoPressurePod_Kind>1</MoyoPressurePod_Kind>
+					<MoyoHexapod_Kind>1</MoyoHexapod_Kind>
+				</options>
+			</li>
+			<!-- 타격대 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>			
+					<Moyo_CartelLight>10</Moyo_CartelLight>
+					<Moyo_CartelLighMelee>1</Moyo_CartelLighMelee>
+					<MoyoPressurePod_Kind>1</MoyoPressurePod_Kind>
+					<MoyoHexapod_Kind>1</MoyoHexapod_Kind>
+				</options>
+			</li>			
+			<li>
+				<!-- 더미 -->
+				<kindDef>Combat</kindDef>
+				<commonality>0</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Moyo_FieldExecutive>1</Moyo_FieldExecutive>
+				</options>
+			</li>			
+			<li>
+				<!-- 주둔지 -->
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Moyo_CartelLabourer>5</Moyo_CartelLabourer>
+					<Moyo_CartelSmuggler>5</Moyo_CartelSmuggler>
+					<Moyo_CartelLight>20</Moyo_CartelLight>
+					<Moyo_CartelLighMelee>5</Moyo_CartelLighMelee>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Moyo_CartelLabourer>5</Moyo_CartelLabourer>
+					<Moyo_CartelSmuggler>5</Moyo_CartelSmuggler>
+					<Moyo_CartelTech>8</Moyo_CartelTech>
+					<Moyo_CartelTrooper>2</Moyo_CartelTrooper>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Moyo_CartelNegotiator>1</Moyo_CartelNegotiator>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Moyo_CartelSmuggler>5</Moyo_CartelSmuggler>
+					<Moyo_CartelLight>20</Moyo_CartelLight>
+					<Moyo_CartelLighMelee>5</Moyo_CartelLighMelee>
+				</guards>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<FactionDef ParentName="MoyoCartelFactionBase">
+		<defName>Moyo_Cartel</defName>
+		<label>moyo Cartel</label>
+		<description>The cartel that dwells in the depth, spreading their influence in the Lighthouse. They are the cause of the civil war, now looking for buisness opportunity on the surface.\n\nbe careful not to be their prey, or makes friends with them and be their partner. Its up to you.</description>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<settlementTexturePath>Icon/Moyo_CartelIcon</settlementTexturePath>
+		<factionIconPath>Icon/Moyo_CartelIcon</factionIconPath>
+		<leaderTitle>Refugee general</leaderTitle>
+		<royalTitleTags>
+			<li>MoyoCartelTitle</li>
+		  </royalTitleTags>		
+		<royalFavorLabel>honor</royalFavorLabel>
+		<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
+		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+		<royalTitleInheritanceRelations>
+		  <li>Child</li>
+		  <li>Grandchild</li>
+		  <li>GreatGrandchild</li>
+		  <li>NephewOrNiece</li>
+		  <li>Spouse</li>
+		  <li>Sibling</li>
+		  <li>HalfSibling</li>
+		  <li>Cousin</li>
+		  <li>Parent</li>
+		  <li>UncleOrAunt</li>
+		</royalTitleInheritanceRelations>		
+		<colorSpectrum>
+			<li>(117, 46, 183)</li>
+		</colorSpectrum>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+	</FactionDef>
+</Defs>

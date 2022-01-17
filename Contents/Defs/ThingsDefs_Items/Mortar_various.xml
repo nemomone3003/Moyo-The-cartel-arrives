@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 베이스 -->
+	<ThingDef ParentName="BaseBullet" Name="CartelShellLaunch" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<flyOverhead>true</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+	<ThingDef Name="CartelMakeableShellBase" ParentName="ShellBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<workAmount>1600</workAmount>
+			<targetCountAdjustment>5</targetCountAdjustment>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>Cartel_MortarShell</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- 박격포 -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>Moyo_CPM_Base</defName>
+		<label>Cartel precision mortar</label>
+		<description>A mortar designed by cartel for on-land combat. Can use specialized mortar shells to tactically attack your foes.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/CPMBase</texPath>
+			<drawSize>(2.5,2.5)</drawSize>
+			<damageData>
+				<rect>(0.38,0.2,0.56375,0.8)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+			</damageData>
+			<shadowData>
+				<offset>(-0.13,-0.87,-0.1)</offset>
+				<volume>(0.5,0.4,1.05)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(2,2)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<stealable>false</stealable>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<tickerType>Normal</tickerType>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<costList>
+			<Moyo_Abyssteel>100</Moyo_Abyssteel>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<inspectorTabs>
+			<li>ITab_Shells</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Mannable">
+				<manWorkType>Violent</manWorkType>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>4.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+		</comps>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>0.7</Flammability>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>30</Mass>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<building>
+			<turretGunDef>Moyo_CPM_Gun</turretGunDef>
+			<turretBurstWarmupTime>5.0</turretBurstWarmupTime>
+			<turretBurstCooldownTime>30.0</turretBurstCooldownTime>
+			<buildingTags>
+				<li>Artillery</li>
+			</buildingTags>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>Mortars</li>
+			<li>MoyoChargedBolt</li>
+		</researchPrerequisites>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<uiIconPath>Things/Building/CPM</uiIconPath>
+		<uiIconScale>0.9</uiIconScale>
+	</ThingDef>
+	<ThingDef ParentName="BaseArtilleryWeapon">
+		<defName>Moyo_CPM_Gun</defName>
+		<label>Cartel precision mortar</label>
+		<description>cartel precision mortar launcher. Lobs specialized mortar shells to tactically attack your foes.</description>
+		<graphicData>
+			<texPath>Things/Building/CPMBarrel</texPath>
+			<drawSize>(2.5,2.5)</drawSize>
+		</graphicData>
+		<weaponTags>
+			<li>Artillery_Moyo</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<warmupTime>5.0</warmupTime>
+				<forcedMissRadius>4</forcedMissRadius>
+				<requireLineOfSight>false</requireLineOfSight>
+				<minRange>35</minRange>
+				<range>500</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Cartel_Mortarfire</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_ChangeableProjectile"/>
+		</comps>
+		<building>
+			<fixedStorageSettings>
+				<filter>
+					<thingDefs>
+						<li>Shell_CartelBunkerBuster</li>
+						<li>Shell_CartelGrapeShot</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+	
+	
+	<!-- 벙커버스터 탄 -->
+	<ThingDef ParentName="CartelMakeableShellBase">
+		<defName>Shell_CartelBunkerBuster</defName>
+		<label>Cartel bunkerbuster shell</label>
+		<description>A specialized shell of devastating explosives. Its delayed explosion is best used for stationary target.</description>
+		<graphicData>
+			<texPath>Things/Building/CPMSBB</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.4</explosiveRadius>
+				<explosiveDamageType>Cartel_BunkerbusterBlast</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.2</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.4</startWickHitPointsPercent>
+				<wickTicks>60~75</wickTicks>
+			</li>
+		</comps>
+		<projectileWhenLoaded>Bullet_Shell_CartelBunkerBuster</projectileWhenLoaded>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mortars</li>
+				<li>MoyoChargedBolt</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="CartelShellLaunch">
+		<defName>Bullet_Shell_CartelBunkerBuster</defName>
+		<label>CartelBunkerBuster shell</label>
+		<graphicData>
+			<texPath>Things/Weapons/CPSM_AP_Blast5</texPath>
+		</graphicData>
+		<projectile>
+			<damageDef>Cartel_BunkerbusterBlast</damageDef>
+			<speed>30</speed>
+			<explosionRadius>1.6</explosionRadius>
+			<!-- <explosionDelay>150</explosionDelay> -->
+			<!-- <preExplosionSpawnThingDef>Explosion_Shell_CartelBunkerBuster</preExplosionSpawnThingDef> -->
+			<!-- <preExplosionSpawnChance>1</preExplosionSpawnChance> -->
+		</projectile>
+	</ThingDef>
+	
+	
+	<!-- 유산탄 -->
+	<ThingDef ParentName="CartelMakeableShellBase">
+		<defName>Shell_CartelGrapeShot</defName>
+		<label>Cartel cluster shell</label>
+		<description>A shell filled with high explosives. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+		<graphicData>
+			<texPath>Things/Building/CPMSAP</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.1</explosiveRadius>
+				<explosiveDamageType>Cartel_ClusterBlast</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<wickTicks>30~60</wickTicks>
+			</li>
+		</comps>
+		<projectileWhenLoaded>Bullet_Shell_CartelGrapeShot</projectileWhenLoaded>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mortars</li>
+				<li>MoyoChargedBolt</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="CartelShellLaunch">
+		<defName>Bullet_Shell_CartelGrapeShot</defName>
+		<label>Cartel cluster shell</label>
+		<graphicData>
+			<texPath>Things/Weapons/CPSM_AP_Blast5</texPath>
+		</graphicData>
+		<projectile>
+			<damageDef>Cartel_ClusterBlast</damageDef>
+			<speed>60</speed>
+			<explosionRadius>3.1</explosionRadius>
+			<damageAmountBase>40</damageAmountBase>
+		</projectile>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>Explosion_Shell_CartelBunkerBuster</defName>
+		<label>Cartel bunkerbuster shell</label>
+		<description>going boom.</description>
+		<graphicData>
+			<texPath>Things/Building/Dummy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<rect>(0.1,0,0.8,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.5</explosiveRadius>
+				<explosiveDamageType>Cartel_BunkerbusterBlast</explosiveDamageType>
+				<wickTicks>50</wickTicks>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>CompUseEffect_StartWick</compClass>
+			</li>
+			<li Class="CompProperties_ProximityFuse">
+				<target>Explosion_Shell_CartelBunkerBuster</target>
+				<radius>1</radius>
+			</li>
+			<li Class="CompProperties_MoteEmitter">
+				<mote>Mote_MoyoClusterBlast_Engage</mote>
+				<maintain>True</maintain>
+				<saveKeysPrefix>glow</saveKeysPrefix>
+			</li>
+		</comps>
+		<!-- <killedLeavings> -->
+		<!-- <Anty_Recyclecore>1</Anty_Recyclecore> -->
+		<!-- </killedLeavings> -->
+		<specialDisplayRadius>3.9</specialDisplayRadius>
+		<thingClass>Building_TrapExplosive</thingClass>
+		<uiIconOffset>(0,-0.14)</uiIconOffset>
+		<altitudeLayer>Conduits</altitudeLayer>
+		<drawerType>RealtimeOnly</drawerType>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<stealable>false</stealable>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<statBases>
+			<Mass>0.1</Mass>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>1</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>-4</Beauty>
+			<TrapSpringChance>1.0</TrapSpringChance>
+		</statBases>
+		<building>
+			<isTrap>true</isTrap>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+	</ThingDef>
+</Defs>

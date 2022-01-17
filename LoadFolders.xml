@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loadFolders>
+	<v1.3>
+		<li>Contents</li>
+		<li IfModActive="Ludeon.Rimworld.Royalty">RoyaltyAddon</li>
+	</v1.3>	
+</loadFolders>
