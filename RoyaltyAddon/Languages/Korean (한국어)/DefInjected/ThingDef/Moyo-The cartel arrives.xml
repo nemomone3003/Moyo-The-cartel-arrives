@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Moyo_PersonaKatana.label>카르텔 결속 외날검</Moyo_PersonaKatana.label>
+  <Moyo_PersonaKatana.description>지상의 무기에 영감을 얻은 무기로, 초진동 날이 장착된 외날검입니다. 카르텔의 걸작인 이 무기는 가장 두꺼운 갑옷도 손쉽게 베어냅니다. 풍문에 의하면 알려지지 않은 카르텔의 최정예 요원들이 이 무기로 무장하고 있다고 합니다.\n\n...또 다른 이야기에 의하면 등대의 전설적인 장인이 만든 한 자루의 붉은 외날검이 존재한다고 합니다.\n\n결속 무기는 자아를 지니고 있으며 오직 한 사람의 주인만 인정합니다. 무기 자아는 사용자의 신속성, 정확성, 분석력을 가속하여 적을 유린할 수 있게 합니다. 주인이 아닌 자는 사용할 수 없습니다.\n\n이 무기에 어떻게 결속된 자아가 장착되었는지는 미스테리입니다.</Moyo_PersonaKatana.description>
+  <Moyo_PersonaKatana.tools.0.label>손잡이</Moyo_PersonaKatana.tools.0.label>
+  <Moyo_PersonaKatana.tools.1.label>칼끝</Moyo_PersonaKatana.tools.1.label>
+  <Moyo_PersonaKatana.tools.2.label>칼날</Moyo_PersonaKatana.tools.2.label>
+</LanguageData>

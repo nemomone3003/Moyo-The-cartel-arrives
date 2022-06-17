@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<Moyo_CartelHood.label>카르텔 후드</Moyo_CartelHood.label>
+	<Moyo_CartelHood.description>Debug.</Moyo_CartelHood.description>
+	<CartelReinforce_Base.label>카르텔 지원군</CartelReinforce_Base.label>
+	<CartelReinforce_Base.description>강력한 전투원인 카르텔 지원군입니다. 그리고 당신은 이걸 읽고 있으면 안됩니다.</CartelReinforce_Base.description>
+	<CartelReinforce_Sniper.label>카르텔 지원군</CartelReinforce_Sniper.label>
+	<CartelReinforce_Sniper.description>강력한 전투원인 카르텔 지원군입니다. 그리고 당신은 이걸 읽고 있으면 안됩니다.</CartelReinforce_Sniper.description>
+	<CartelReinforce_EliteSniper.label>카르텔 지원군</CartelReinforce_EliteSniper.label>
+	<CartelReinforce_EliteSniper.description>강력한 전투원인 카르텔 지원군입니다. 그리고 당신은 이걸 읽고 있으면 안됩니다.</CartelReinforce_EliteSniper.description>
+</LanguageData>

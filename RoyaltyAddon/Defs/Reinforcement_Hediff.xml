@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 지원군 헤디프 -->
+	<HediffDef>
+		<defName>CartelReinforce_Base</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Cartel reinforcement</label>
+		<description>Reinforcement from a Cartel, a powerful combatant. You should not be reading this.</description>
+		<defaultLabelColor>(0.55,0.55,0.80)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<statOffsets>
+					<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+					<MeleeHitChance>3</MeleeHitChance>
+					<AimingDelayFactor>-0.1</AimingDelayFactor>
+					<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- 저격수 헤디프 -->
+	<HediffDef>
+		<defName>CartelReinforce_Sniper</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Cartel reinforcement</label>
+		<description>Reinforcement from a Cartel, a powerful combatant. You should not be reading this.</description>
+		<defaultLabelColor>(0.55,0.55,0.80)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<statOffsets>
+					<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+					<MeleeHitChance>3</MeleeHitChance>
+					<AimingDelayFactor>-0.1</AimingDelayFactor>
+					<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- 엘리트 저격수 헤디프 -->
+	<HediffDef>
+		<defName>CartelReinforce_EliteSniper</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Cartel reinforcement</label>
+		<description>Reinforcement from a Cartel, a powerful combatant. You should not be reading this.</description>
+		<defaultLabelColor>(0.55,0.55,0.80)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<statOffsets>
+					<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+					<MeleeHitChance>3</MeleeHitChance>
+					<AimingDelayFactor>-0.1</AimingDelayFactor>
+					<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>	
+</Defs>

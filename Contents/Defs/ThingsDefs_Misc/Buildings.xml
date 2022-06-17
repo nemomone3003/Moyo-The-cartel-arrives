@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<DesignatorDropdownGroupDef>
 		<defName>Cartel_DrugSynthesyser</defName>
-		<label>cartel auto synthesis station</label>
-	  </DesignatorDropdownGroupDef>
-
+		<label>drug synthesis station</label>
+	</DesignatorDropdownGroupDef>
+	
 	<!-- 카르텔 약물합성기 -->
 	<ThingDef ParentName="BuildingBase" Name="CartelAutoSynthesis" Abstract="True">
 		<descriptionHyperlinks>
@@ -17,31 +16,21 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
-		<uiIconPath>Things/Building/MoyoDBLStationIcon</uiIconPath>
-		<uiIconScale>1</uiIconScale>
+		<uiIconScale>1.2</uiIconScale>
 		<building>
 			<buildingTags>
 				<li>Production</li>
 			</buildingTags>
 		</building>
 		<designationCategory>Production</designationCategory>
-		<costList>
-			<Moyo_Abyssteel>50</Moyo_Abyssteel>
-			<ComponentSpacer>3</ComponentSpacer>
-			<Cartel_AdvancedMachine>1</Cartel_AdvancedMachine>
-		</costList>
 		<researchPrerequisites>
 			<li>DBS_Research</li>
-			<li>DeepBlue_Manipulation</li>
+			<li>MoyoProduction</li>
 		</researchPrerequisites>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>1500</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Glower">
-				<glowRadius>4</glowRadius>
-				<glowColor>(80,80,217,0)</glowColor>
+				<basePowerConsumption>800</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -85,10 +74,9 @@
 			<li>ExoticBuilding</li>
 		</tradeTags>
 	</ThingDef>
-
 	<ThingDef ParentName="CartelAutoSynthesis">
 		<defName>Cartel_AutoSynthesys_BlueBurst</defName>
-		<label>cartel auto synthesis station: blueburst</label>
+		<label>drug synthesis station: Blueburst</label>
 		<description>A complex machine that automatically synthesize deepblue into more complex drugs./n/nThis configuration synthesyses blueburst.</description>
 		<uiIconPath>Things/Building/MoyoADS3</uiIconPath>
 		<comps>
@@ -109,17 +97,22 @@
 				<requiresFuel>true</requiresFuel>
 				<requiresPower>true</requiresPower>
 				<spawnCount>2</spawnCount>
-				<spawnIntervalRange>180000</spawnIntervalRange>
+				<spawnIntervalRange>15000</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 				<spawnMaxAdjacent>7</spawnMaxAdjacent>
 				<spawnForbidden>false</spawnForbidden>
 				<saveKeysPrefix>bloodbag</saveKeysPrefix>
 			</li>
-		</comps>	
+		</comps>
+		<costList>
+			<Moyo_Abyssteel>50</Moyo_Abyssteel>
+			<Cartel_AdvancedMachine>1</Cartel_AdvancedMachine>
+			<BlueBurst>10</BlueBurst>
+		</costList>		
 	</ThingDef>
 	<ThingDef ParentName="CartelAutoSynthesis">
 		<defName>Cartel_AutoSynthesys_BlueMed</defName>
-		<label>cartel auto synthesis station: regene-blue</label>
+		<label>drug synthesis station: Regene-blue</label>
 		<description>A complex machine that automatically synthesize deepblue into more complex drugs./n/nThis configuration synthesyses regene-blue.</description>
 		<uiIconPath>Things/Building/MoyoADS6</uiIconPath>
 		<comps>
@@ -140,17 +133,22 @@
 				<requiresFuel>true</requiresFuel>
 				<requiresPower>true</requiresPower>
 				<spawnCount>2</spawnCount>
-				<spawnIntervalRange>180000</spawnIntervalRange>
+				<spawnIntervalRange>145000</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 				<spawnMaxAdjacent>7</spawnMaxAdjacent>
 				<spawnForbidden>false</spawnForbidden>
 				<saveKeysPrefix>bloodbag</saveKeysPrefix>
 			</li>
-		</comps>	
+		</comps>
+		<costList>
+			<Moyo_Abyssteel>50</Moyo_Abyssteel>
+			<Cartel_AdvancedMachine>1</Cartel_AdvancedMachine>
+			<BlueMed>10</BlueMed>
+		</costList>				
 	</ThingDef>
 	<ThingDef ParentName="CartelAutoSynthesis">
 		<defName>Cartel_AutoSynthesys_PenoxyBlue</defName>
-		<label>cartel auto synthesis station: penoxy-blue</label>
+		<label>drug synthesis station: Penoxy-blue</label>
 		<description>A complex machine that automatically synthesize deepblue into more complex drugs./n/nThis configuration synthesyses penoxy-blue.</description>
 		<uiIconPath>Things/Building/MoyoADS5</uiIconPath>
 		<comps>
@@ -171,18 +169,23 @@
 				<requiresFuel>true</requiresFuel>
 				<requiresPower>true</requiresPower>
 				<spawnCount>2</spawnCount>
-				<spawnIntervalRange>180000</spawnIntervalRange>
+				<spawnIntervalRange>145000</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 				<spawnMaxAdjacent>7</spawnMaxAdjacent>
 				<spawnForbidden>false</spawnForbidden>
 				<saveKeysPrefix>bloodbag</saveKeysPrefix>
 			</li>
-		</comps>	
+		</comps>
+		<costList>
+			<Moyo_Abyssteel>50</Moyo_Abyssteel>
+			<Cartel_AdvancedMachine>1</Cartel_AdvancedMachine>
+			<PenoxyBlue>10</PenoxyBlue>
+		</costList>	
 	</ThingDef>
 	<ThingDef ParentName="CartelAutoSynthesis">
 		<defName>Cartel_AutoSynthesys_Clensazure</defName>
-		<label>cartel auto synthesis station: clens-azure</label>
-		<description>A complex machine that automatically synthesize deepblue into more complex drugs./n/nThis configuration synthesyses clens-azure.</description>
+		<label>drug synthesis station: Clear-azure</label>
+		<description>A complex machine that automatically synthesize deepblue into more complex drugs./n/nThis configuration synthesyses clear-azure.</description>
 		<uiIconPath>Things/Building/MoyoADS4</uiIconPath>
 		<comps>
 			<li Class="CompProperties_Refuelable">
@@ -202,17 +205,22 @@
 				<requiresFuel>true</requiresFuel>
 				<requiresPower>true</requiresPower>
 				<spawnCount>2</spawnCount>
-				<spawnIntervalRange>180000</spawnIntervalRange>
+				<spawnIntervalRange>145000</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 				<spawnMaxAdjacent>7</spawnMaxAdjacent>
 				<spawnForbidden>false</spawnForbidden>
 				<saveKeysPrefix>bloodbag</saveKeysPrefix>
 			</li>
-		</comps>	
+		</comps>
+		<costList>
+			<Moyo_Abyssteel>50</Moyo_Abyssteel>
+			<Cartel_AdvancedMachine>1</Cartel_AdvancedMachine>
+			<Clensazure>10</Clensazure>
+		</costList>			
 	</ThingDef>
 	<ThingDef ParentName="CartelAutoSynthesis">
 		<defName>Cartel_AutoSynthesys_SustainerLapis</defName>
-		<label>cartel auto synthesis station: sustainer-lapis</label>
+		<label>drug synthesis station: Sustainer-lapis</label>
 		<description>A complex machine that automatically synthesize deepblue into more complex drugs./n/nThis configuration synthesyses sustainer-lapis.</description>
 		<uiIconPath>Things/Building/MoyoADS1</uiIconPath>
 		<comps>
@@ -233,17 +241,22 @@
 				<requiresFuel>true</requiresFuel>
 				<requiresPower>true</requiresPower>
 				<spawnCount>2</spawnCount>
-				<spawnIntervalRange>180000</spawnIntervalRange>
+				<spawnIntervalRange>145000</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 				<spawnMaxAdjacent>7</spawnMaxAdjacent>
 				<spawnForbidden>false</spawnForbidden>
 				<saveKeysPrefix>bloodbag</saveKeysPrefix>
 			</li>
-		</comps>	
+		</comps>
+		<costList>
+			<Moyo_Abyssteel>50</Moyo_Abyssteel>
+			<Cartel_AdvancedMachine>1</Cartel_AdvancedMachine>
+			<SustainerLapis>10</SustainerLapis>
+		</costList>			
 	</ThingDef>
 	<ThingDef ParentName="CartelAutoSynthesis">
 		<defName>Cartel_AutoSynthesys_DetoxerCobalt</defName>
-		<label>cartel auto synthesis station: sustainer-lapis</label>
+		<label>drug synthesis station: Detoxer-cobalt</label>
 		<description>A complex machine that automatically synthesize deepblue into more complex drugs./n/nThis configuration synthesyses detoxer-cobalt.</description>
 		<uiIconPath>Things/Building/MoyoADS1</uiIconPath>
 		<comps>
@@ -264,42 +277,17 @@
 				<requiresFuel>true</requiresFuel>
 				<requiresPower>true</requiresPower>
 				<spawnCount>2</spawnCount>
-				<spawnIntervalRange>180000</spawnIntervalRange>
+				<spawnIntervalRange>145000</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 				<spawnMaxAdjacent>7</spawnMaxAdjacent>
 				<spawnForbidden>false</spawnForbidden>
 				<saveKeysPrefix>bloodbag</saveKeysPrefix>
 			</li>
-		</comps>	
-	</ThingDef>		
-
-
-	<ThingDef ParentName="ResourceBase">
-		<defName>Cartel_AdvancedMachine</defName>
-		<label>cartel advanced component</label>
-		<description>Advanced machinary manufactured by the cratel and cartel only. This component is essential to make certain machines.\n\nYou can obtain this by gaining the Cartel's favor.</description>
-		<graphicData>
-			<texPath>Things/Items/CartelComponent</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<soundInteract>Metal_Drop</soundInteract>
-		<soundDrop>Standard_Drop</soundDrop>
-		<stackLimit>50</stackLimit>
-		<healthAffectsPrice>false</healthAffectsPrice>
-		<statBases>
-			<MaxHitPoints>70</MaxHitPoints>
-			<MarketValue>200</MarketValue>
-			<Mass>0.6</Mass>
-			<Flammability>0.6</Flammability>
-			<DeteriorationRate>2.0</DeteriorationRate>
-		</statBases>
-		<intricate>true</intricate>
-		<thingCategories>
-			<li>Manufactured</li>
-		</thingCategories>
-		<tradeTags>
-			<li>ExoticMisc</li>
-		</tradeTags>
-		<tradeability>Sellable</tradeability>
+		</comps>
+		<costList>
+			<Moyo_Abyssteel>50</Moyo_Abyssteel>
+			<Cartel_AdvancedMachine>1</Cartel_AdvancedMachine>
+			<DetoxerCobalt>10</DetoxerCobalt>
+		</costList>			
 	</ThingDef>
 </Defs>

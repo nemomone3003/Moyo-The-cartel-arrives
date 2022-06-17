@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Moyo_CartelRoyalsuit.label>카르텔 간부 슈트</Moyo_CartelRoyalsuit.label>
+  <Moyo_CartelRoyalsuit.description>카르텔의 특별한 외형을 가진 바디슈트입니다. 착용자에게 품위있는 외형과 더불어 준수한 방어력을 제공해주기 위해 만들어졌습니다. 이 복장은 단가가 비싸기에 주로 카르텔의 간부들에게 주로 사용되었습니다.</Moyo_CartelRoyalsuit.description>
+  <Moyo_CartelRobeA.label>카르텔 간부 코트 A</Moyo_CartelRobeA.label>
+  <Moyo_CartelRobeA.description>카르텔의 특별한 외형을 가진 코트입니다. 사용된 재료로 인해 보기와는 다르게 내구성이 좋습니다.\n\n이런 의류들은 카르텔 간부들에게도 꽤나 부담이 되는 가격으로 거래됩니다.</Moyo_CartelRobeA.description>
+  <Moyo_CartelRobeB.label>카르텔 간부 코트 B</Moyo_CartelRobeB.label>
+  <Moyo_CartelRobeB.description>카르텔의 특별한 외형을 가진 코트입니다. 사용된 재료로 인해 보기와는 다르게 내구성이 좋습니다.\n\n이런 의류들은 카르텔 간부들에게도 꽤나 부담이 되는 가격으로 거래됩니다.</Moyo_CartelRobeB.description>
+  <Moyo_CEsuit.label>카르텔 처형인 슈트</Moyo_CEsuit.label>
+  <Moyo_CEsuit.description>카르텔의 최고 정예 요원들을 위해 만들어진 진보된 갑옷입니다. 기존의 동력 갑옷과 비교해 훨씬 얇은 장갑판을 가지고 있지만 사용자의 민첩성을 크게 강화시키며 장착된 충격 완화장치를 통해 이 단점을 극복합니다.</Moyo_CEsuit.description>
+  <Moyo_CEhelmet.label>카르텔 처형인 헬멧</Moyo_CEhelmet.label>
+  <Moyo_CEhelmet.description>카르텔의 최고 정예 요원들을 위해 만들어진 진보된 헬멧입니다. 다양한 전투 보조장치를 통해 전투를 효율적으로 이끌 수 있게 해줌과 동시에 착용자에게 뛰어난 방어력을 제공해줍니다.</Moyo_CEhelmet.description>
+  <Moyo_CBsuit.label>카르텔 방탄갑옷</Moyo_CBsuit.label>
+  <Moyo_CBsuit.description>카르텔의 제식 방탄복입니다. 진보된 카르텔 타격대 장비에 비해 훨씬 저렴하며 카르텔 요원들에게 준수한 방어력을 제공합니다.</Moyo_CBsuit.description>
+  <Moyo_CBhelmet.label>카르텔 방탄모</Moyo_CBhelmet.label>
+  <Moyo_CBhelmet.description>카르텔의 제식 방탄모입니다.진보된 카르텔 타격대 장비에 비해 훨씬 저렴하며 카르텔 요원들에게 준수한 방어력을 제공합니다.</Moyo_CBhelmet.description>
+  <Moyo_Cartelsuit.label>카르텔 복합소재 슈트</Moyo_Cartelsuit.label>
+  <Moyo_Cartelsuit.description>다양한 소재를 이용해 보강한 옷입니다. 복잡하게 짜여진 원단은 매우 질기며, 강력한 단열성능을 제공합니다. 이 옷은 카르텔 스타일로 제작되었습니다.</Moyo_Cartelsuit.description>
+  <Moyo_CartelStrikerHood.label>카르텔 후드망토</Moyo_CartelStrikerHood.label>
+  <Moyo_CartelStrikerHood.description>후드가 달린 카르텔의 망토입니다. 여러 겹의 뎁스위브가 겹쳐저 하나의 두꺼운 원단을 형성하고 있습니다. 이 망토는 무겁지만 주변 환경으로부터 사용자를 보호하는데 뛰어납니다.</Moyo_CartelStrikerHood.description>
+  <Moyo_CSgear.label>카르텔 타격대 갑옷</Moyo_CSgear.label>
+  <Moyo_CSgear.description>카르텔 타격대의 제식 갑옷입니다. 경량 장갑판과 이동 보조기가 장착되어 사용자의 움직임을 방해하지 않도록 설계되었습니다.\n\n카르텔 타격대는 파괴공작, 정보 추출과 암살에 이르기까지 주로 어둠 속에서 장로들에 맞서 싸웠습니다.</Moyo_CSgear.description>
+  <Moyo_CShelmet.label>카르텔 타격대 헬멧</Moyo_CShelmet.label>
+  <Moyo_CShelmet.description>카르텔 타격대의 제식 헬멧입니다. 신속정확한 사격을 위한 조준 보조기가 장착되어 있으며, 특유의 바이저 모양은 카르텔의 상징과도 같습니다.\n\n타격대는 주로 위험성이 높은 작전을 수행하기에, 카르텔 내부에서 은퇴한 타격대원을 찾기란 힘든 일입니다. 대부분은 작전 중 사망하거나 탈영하기 때문입니다.</Moyo_CShelmet.description>
+  <Cartel_AdvancedMachine.label>암호화된 카르텔 부품</Cartel_AdvancedMachine.label>
+  <Cartel_AdvancedMachine.description>등대의 카르텔이 제조한 진보된 기계로, 카르텔의 기계를 만드는 데에 필수적인 부품입니다.\n\n이 부품의 제조과정은 기밀로써 관리되며 가장 가까운 후원자들에게만 제한된 수량을 제공해줍니다.</Cartel_AdvancedMachine.description>
+  <Moyo_CombatKnife.label>카르텔 컴뱃나이프</Moyo_CombatKnife.label>
+  <Moyo_CombatKnife.description>날카롭게 벼려진 대형 나이프로, 전투와 작업 양쪽에서 유용한 도구입니다.\n\n지상의 환경을 고려해 이 나이프는 잠수부 나이프에 비해 더 크고 무겁게 만들어졌습니다. 위협적인 모양은 덤입니다.</Moyo_CombatKnife.description>
+  <Moyo_CombatKnife.tools.0.label>손잡이</Moyo_CombatKnife.tools.0.label>
+  <Moyo_CombatKnife.tools.1.label>칼날</Moyo_CombatKnife.tools.1.label>
+  <Moyo_CombatKnife.tools.2.label>칼끝</Moyo_CombatKnife.tools.2.label>
+  <Moyo_Katana.label>카르텔 외날검</Moyo_Katana.label>
+  <Moyo_Katana.description>지상의 무기에 영감을 얻은 무기로, 초진동 날이 장착된 외날검입니다. 카르텔의 걸작인 이 무기는 가장 두꺼운 갑옷도 손쉽게 베어냅니다. 풍문에 의하면 알려지지 않은 카르텔의 최정예 요원들이 이 무기로 무장하고 있다고 합니다.\n\n...또 다른 이야기에 의하면 등대의 전설적인 장인이 만든 한 자루의 붉은 외날검이 존재한다고 합니다.</Moyo_Katana.description>
+  <Moyo_Katana.tools.0.label>손잡이</Moyo_Katana.tools.0.label>
+  <Moyo_Katana.tools.1.label>칼끝</Moyo_Katana.tools.1.label>
+  <Moyo_Katana.tools.2.label>칼날</Moyo_Katana.tools.2.label>
+  <Moyo_CartelPistol.label>카르텔 권총</Moyo_CartelPistol.label>
+  <Moyo_CartelPistol.description>빠른 간격으로 2발을 점사하는 카르텔의 보조무기입니다. 카르텔의 다른 무기에 비해 화력은 부족하지만 휴대성이 뛰어납니다.\n\n카르텔에 소속된 인원들은 위헙에 노출되기 쉽기에 호신용 무기를 구비하는 것이 일상이었습니다. 그 위협은 장로의 요원들부터 내부의 경쟁자까지 카르텔 안팍에 즐비합니다.</Moyo_CartelPistol.description>
+  <Moyo_CartelPistol.tools.0.label>손잡이</Moyo_CartelPistol.tools.0.label>
+  <Bullet_MoyoCartelPistol.label>카르텔 전자기볼트</Bullet_MoyoCartelPistol.label>
+  <Moyo_CartelRevolver.label>카르텔 핸드캐논</Moyo_CartelRevolver.label>
+  <Moyo_CartelRevolver.description>기존의 리볼버와 비슷한 형태를 가졌지만 작동 구조는 전혀 관련이 없는 카르텔의 핸드캐논입니다.  연사속도보단 한 발 한 발의 파괴력에 집중했습니다.\n\n카르텔은 지상의 문물을 받아들이는 것에 더 관대했고, 곧이어 나온 이 무기는 많은 고위층 인사들이 선호하는 무기가 되었습니다.</Moyo_CartelRevolver.description>
+  <Moyo_CartelRevolver.tools.0.label>손잡이</Moyo_CartelRevolver.tools.0.label>
+  <Bullet_MoyoCartelRevolver.label>카르텔 전자기볼트</Bullet_MoyoCartelRevolver.label>
+  <Moyo_CartelSMG.label>카르텔 SMG</Moyo_CartelSMG.label>
+  <Moyo_CartelSMG.description>카르텔이 제작한 SMG로, 타격대들에게 제식으로 지급되는 무기입니다. 소형 관통탄을 연사하는 이 무기는 치고 빠지기에 특화된 무기입니다.\n\n전면전에선 승산이 없는 것을 알고 있는 카르텔은 게릴라 전술에 특회된 타격대를 조직해 적의 취약점을 공략했습니다.</Moyo_CartelSMG.description>
+  <Moyo_CartelSMG.tools.0.label>개머리판</Moyo_CartelSMG.tools.0.label>
+  <Bullet_MoyoCartelSMG.label>카르텔 전자기볼트</Bullet_MoyoCartelSMG.label>
+  <Moyo_CarteCarbine.label>카르텔 카빈</Moyo_CarteCarbine.label>
+  <Moyo_CarteCarbine.description>중장거리 교전에 집중한 카르텔 타격대의 무기입니다. 매우 짧은 간격으로 2발을 점사하며, 높은 명중률을 보여줍니다.\n\n등대 내부에선 큰 활약을 보이지 못했지만 카르텔이 지상으로 진출한 후 가장 널리 쓰이는 무기 중 하나가 되었습니다.</Moyo_CarteCarbine.description>
+  <Moyo_CarteCarbine.tools.0.label>개머리판</Moyo_CarteCarbine.tools.0.label>
+  <Bullet_MoyoCartelRifle.label>카르텔 전자기볼트</Bullet_MoyoCartelRifle.label>
+  <Moyo_CartelLongRifle.label>카르텔 아바레스트</Moyo_CartelLongRifle.label>
+  <Moyo_CartelLongRifle.description>장거리 사격만을 위해 설계된 카르텔의 대형 소총입니다. 다양한 조준 보조장치가 장착되어 있으며, 파열음과 함께 초고속으로 날아가는 탄환은 무시무시한 정확도로 대상을 타격합니다.\n\n저격수를 양성하는 것은 카르텔 내부에서도 논란을 일으켰으며, 저격수들은 여전히 등대 내부에서 대우받지 못합니다.</Moyo_CartelLongRifle.description>
+  <Moyo_CartelLongRifle.tools.0.label>개머리판</Moyo_CartelLongRifle.tools.0.label>
+  <Bullet_MoyoCartelLongRifle.label>카르텔 전자기볼트</Bullet_MoyoCartelLongRifle.label>
+  <Cartel_AutoSynthesys_BlueBurst.comps.3.mote.0.label>ADS1</Cartel_AutoSynthesys_BlueBurst.comps.3.mote.0.label>
+  <Cartel_AutoSynthesys_BlueBurst.label>약물합성기: 블루버스트</Cartel_AutoSynthesys_BlueBurst.label>
+  <Cartel_AutoSynthesys_BlueBurst.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다./n/n해당 설정은 블루버스트를 합성합니다.</Cartel_AutoSynthesys_BlueBurst.description>
+  <Cartel_AutoSynthesys_BlueMed.comps.3.mote.0.label>ADS1</Cartel_AutoSynthesys_BlueMed.comps.3.mote.0.label>
+  <Cartel_AutoSynthesys_BlueMed.label>약물합성기: 리제네-블루</Cartel_AutoSynthesys_BlueMed.label>
+  <Cartel_AutoSynthesys_BlueMed.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다./n/n해당 설정은 리제네-블루를 합성합니다.</Cartel_AutoSynthesys_BlueMed.description>
+  <Cartel_AutoSynthesys_PenoxyBlue.comps.3.mote.0.label>ADS1</Cartel_AutoSynthesys_PenoxyBlue.comps.3.mote.0.label>
+  <Cartel_AutoSynthesys_PenoxyBlue.label>약물합성기: 페녹시-블루</Cartel_AutoSynthesys_PenoxyBlue.label>
+  <Cartel_AutoSynthesys_PenoxyBlue.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다./n/n해당 설정은 페녹시-블루를 합성합니다.</Cartel_AutoSynthesys_PenoxyBlue.description>
+  <Cartel_AutoSynthesys_Clensazure.comps.3.mote.0.label>ADS1</Cartel_AutoSynthesys_Clensazure.comps.3.mote.0.label>
+  <Cartel_AutoSynthesys_Clensazure.label>약물합성기: 클리어-애쥬어</Cartel_AutoSynthesys_Clensazure.label>
+  <Cartel_AutoSynthesys_Clensazure.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다./n/n해당 설정은 클리어-애쥬어를 합성합니다</Cartel_AutoSynthesys_Clensazure.description>
+  <Cartel_AutoSynthesys_SustainerLapis.comps.3.mote.0.label>ADS1</Cartel_AutoSynthesys_SustainerLapis.comps.3.mote.0.label>
+  <Cartel_AutoSynthesys_SustainerLapis.label>약물합성기: 서스테이너-라피스</Cartel_AutoSynthesys_SustainerLapis.label>
+  <Cartel_AutoSynthesys_SustainerLapis.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다./n/n해당 설정은 서스테이너-라피스를 합성합니다</Cartel_AutoSynthesys_SustainerLapis.description>
+  <Cartel_AutoSynthesys_DetoxerCobalt.comps.3.mote.0.label>ADS1</Cartel_AutoSynthesys_DetoxerCobalt.comps.3.mote.0.label>
+  <Cartel_AutoSynthesys_DetoxerCobalt.label>약물합성기: 디톡서-코발트</Cartel_AutoSynthesys_DetoxerCobalt.label>
+  <Cartel_AutoSynthesys_DetoxerCobalt.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다./n/n해당 설정은 디톡서-코발트를 합성합니다</Cartel_AutoSynthesys_DetoxerCobalt.description>
+</LanguageData>

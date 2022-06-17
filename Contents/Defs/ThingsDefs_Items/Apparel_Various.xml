@@ -3,8 +3,8 @@
 	<!-- 방탄복 -->
 	<ThingDef ParentName="Moyo_ArmorMachineableBase">
 		<defName>Moyo_CBsuit</defName>
-		<label>moyo balistic armor</label>
-		<description>A standard issue body armor of the cartel. Its far cheaper than advanced striker gear while providing decent protection to surface operatives.</description>
+		<label>Cartel balistic armor</label>
+		<description>A standard issue body armor of the Cartel. Its far cheaper than advanced striker gear while providing decent protection to Cartel operatives.</description>
 		<graphicData>
 			<texPath>Things/Apparel/MoyoCBsuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -13,23 +13,24 @@
 		<techLevel>Industrial</techLevel>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
-			<Steel>70</Steel>
-			<Plasteel>10</Plasteel>
+			<Steel>30</Steel>
+			<Plasteel>15</Plasteel>
 			<Moyo_Depthweave>30</Moyo_Depthweave>
 		</costList>
 		<tradeability>Sellable</tradeability>
 		<statBases>
 			<WorkToMake>10000</WorkToMake>
-			<MaxHitPoints>220</MaxHitPoints>
+			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>6</Mass>
 			<Flammability>0.6</Flammability>
 			<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>			
 			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<apparel>
-			<bodyPartGroups>
+			<bodyPartGroups Inherit="false">
 				<li>Torso</li>
 				<li>Neck</li>
 				<li>Shoulders</li>
@@ -67,8 +68,8 @@
 	<!-- 방탄헬멧 -->
 	<ThingDef ParentName="Moyo_HelmetMachineableBase">
 		<defName>Moyo_CBhelmet</defName>
-		<label>moyo balistic helmet</label>
-		<description>A standard issue body armor of the cartel. Its far cheaper than advanced striker gear while providing decent protection to surface operatives.</description>
+		<label>Cartel balistic helmet</label>
+		<description>A standard issue helmet of the Cartel. Its far cheaper than advanced striker gear while providing decent protection to Cartel operatives.</description>
 		<graphicData>
 			<texPath>Things/Apparel/MoyoCBHelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -77,23 +78,24 @@
 		<uiIconScale>1.4</uiIconScale>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
-			<Plasteel>10</Plasteel>
-			<Steel>15</Steel>
+			<Plasteel>5</Plasteel>
+			<Steel>10</Steel>
 			<Moyo_Depthweave>10</Moyo_Depthweave>
 		</costList>
 		<tradeability>Sellable</tradeability>
 		<statBases>
 			<WorkToMake>9000</WorkToMake>
-			<MaxHitPoints>130</MaxHitPoints>
+			<MaxHitPoints>80</MaxHitPoints>
 			<Mass>1.7</Mass>
 			<Flammability>0.6</Flammability>
 			<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>			
 			<EquipDelay>1.2</EquipDelay>
 		</statBases>
 		<apparel>
-			<bodyPartGroups>
+			<bodyPartGroups Inherit="false">
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/MoyoCBHelmet</wornGraphicPath>
@@ -121,8 +123,8 @@
 	<!--카르텔 복합슈트-->
 	<ThingDef ParentName="Moyo_ApparelBase">
 		<defName>Moyo_Cartelsuit</defName>
-		<label>moyo cartel composite suit</label>
-		<description>Reinforced with various materials, the suit is quite tough and provides boasts a high temperature resistance. it has a touch of cartel influence.</description>
+		<label>Cartel composite suit</label>
+		<description>Reinforced with various materials, the suit is quite tough and provides boasts a high temperature resistance. it has a touch of Cartel influence.</description>
 		<graphicData>
 			<texPath>Things/Apparel/MoyoCartelsuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -149,7 +151,7 @@
 			<MoveSpeed>0.1</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
-			<bodyPartGroups>
+			<bodyPartGroups Inherit="false">
 				<li>Torso</li>
 				<li>Neck</li>
 				<li>Shoulders</li>
@@ -187,8 +189,8 @@
 	<!-- 카르텔 타격대 후드 -->
 	<ThingDef ParentName="Moyo_ApparelBase">
 		<defName>Moyo_CartelStrikerHood</defName>
-		<label>moyo cartel hooded cloak</label>
-		<description>Reinforced with various materials, the suit is quite tough and provides boasts a high temperature resistance. it has a touch of cartel influence.</description>
+		<label>Cartel hooded cloak</label>
+		<description>A hooded cloak of the Cartel. Layers of depthweave are woven together to form a thick, sturdy fabric. Its heavy but provides excellent protection against elements.</description>
 		<graphicData>
 			<texPath>Things/Apparel/MoyoStrikerHood1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -196,14 +198,14 @@
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<costList>
-			<ComponentIndustrial>5</ComponentIndustrial>
-			<Moyo_Depthweave>90</Moyo_Depthweave>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Moyo_Depthweave>120</Moyo_Depthweave>
 		</costList>
 		<tradeability>Sellable</tradeability>
 		<statBases>
-			<MaxHitPoints>250</MaxHitPoints>
+			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToMake>25000</WorkToMake>
-			<Mass>0.5</Mass>
+			<Mass>2.5</Mass>
 			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.60</ArmorRating_Heat>
@@ -216,7 +218,7 @@
 			<HuntingStealth>0.25</HuntingStealth>
 		</equippedStatOffsets>
 		<apparel>
-			<bodyPartGroups>
+			<bodyPartGroups Inherit="false">
 				<li>FullHead</li>
 				<li>UpperHead</li>
 				<li>Torso</li>
@@ -232,7 +234,6 @@
 			</layers>
 			<tags>
 				<li>Moyo_CartelStriker</li>
-				<li>RoyalTier5</li>
 			</tags>
 		</apparel>
 		<recipeMaker>
@@ -264,8 +265,8 @@
 	<!--타격대복-->
 	<ThingDef ParentName="Moyo_PowerArmorBase">
 		<defName>Moyo_CSgear</defName>
-		<label>moyo cartel striker gear</label>
-		<description>Standard issue armor for cartel strike forces. Equipped with lightweight plates and movement assisters, wearer remain agile while being protected.</description>
+		<label>Cartel striker gear</label>
+		<description>Standard issue armor for Cartel strike forces. Equipped with lightweight plates and movement assisters, wearer remain agile while being protected.\n\nThe Cartel strike forces mostly fought within the shadows. Ranging from sabotage, assasination to info extractions.</description>
 		<recipeMaker>
 			<researchPrerequisite>DeepSeaProtection</researchPrerequisite>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -330,8 +331,8 @@
 	<!-- 타격대헬멧 -->
 	<ThingDef ParentName="Moyo_PowerHelmetBase">
 		<defName>Moyo_CShelmet</defName>
-		<label>moyo cartel striker helmet</label>
-		<description>Standard issue helmet for cartel strike forces. Equipped with aiming assisters to help with more quick and accurate fire. Their distinct visors are the icon of the cartel.</description>
+		<label>Cartel striker helmet</label>
+		<description>Standard issue helmet for Cartel strike forces. Equipped with aiming assisters for quick and accurate fire. Their distinct visors are the icon of the cartel.\n\nIts rare to find a former strike force among the members of the Cartel. Due to the high risk operations they perform, most of them are KIA or deserted from the Cartel.</description>
 		<recipeMaker>
 			<researchPrerequisite>DeepSeaProtection</researchPrerequisite>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>

@@ -6,11 +6,11 @@
 		<pawnsPlural>Moyos</pawnsPlural>
 		<listOrderPriority>30</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
 		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>61</configurationListOrderPriority>
 		<canMakeRandomly>true</canMakeRandomly>
-		<leaderTitle>Cartel Field executive</leaderTitle>
+		<leaderTitle>Cartel division administrator</leaderTitle>
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<techLevel>Spacer</techLevel>
@@ -22,17 +22,12 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistAbstract</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
 		</disallowedMemes>
 		<structureMemeWeights>
 			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">3</Structure_Ideological>
@@ -67,17 +62,17 @@
 			</disallowedThingDefs>
 		</apparelStuffFilter>
 		<caravanTraderKinds>
-			<li>Caravan_MoyoCivil_BulkGoods</li>
-			<li>Caravan_MoyoCivil_CombatSupplier</li>
-			<li>Caravan_MoyoCivil_Exotic</li>
-			<li>Caravan_MoyoCivil_PirateMerchant</li>
+			<li>Caravan_MoyoCartel_BulkGoods</li>
+			<li>Caravan_MoyoCartel_CombatSupplier</li>
+			<li>Caravan_MoyoCartel_Exotic</li>
+			<li>Caravan_MoyoCartel_PirateMerchant</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">MoyoCartel_Caravan_TributeCollector</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
 			<li>Visitor_Outlander_Standard</li>
 		</visitorTraderKinds>
 		<baseTraderKinds>
-			<li>Base_MoyoCivil_Standard</li>
+			<li>Base_MoyoCartel_Standard</li>
 		</baseTraderKinds>
 		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
 		<raidLootMaker>MoyoRaidLootMaker</raidLootMaker>
@@ -177,29 +172,26 @@
 	<FactionDef ParentName="MoyoCartelFactionBase">
 		<defName>Moyo_Cartel</defName>
 		<label>moyo Cartel</label>
-		<description>The cartel that dwells in the depth, spreading their influence in the Lighthouse. They are the cause of the civil war, now looking for buisness opportunity on the surface.\n\nbe careful not to be their prey, or makes friends with them and be their partner. Its up to you.</description>
+		<description>The cartel that dwells in the depth, spreading their influence in the Lighthouse. Being a part of the civil war, now looking for buisness opportunity on the surface.\n\nEven if they are a sub branch of the Cartel, they are still a faction with formidable power. You may fight against them or be their business partner, the choice is yours.</description>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<settlementTexturePath>Icon/Moyo_CartelIcon</settlementTexturePath>
 		<factionIconPath>Icon/Moyo_CartelIcon</factionIconPath>
-		<leaderTitle>Refugee general</leaderTitle>
+		<fixedLeaderKinds>
+			<li>Empire_Royal_Stellarch</li>
+		</fixedLeaderKinds>		
 		<royalTitleTags>
 			<li>MoyoCartelTitle</li>
-		  </royalTitleTags>		
-		<royalFavorLabel>honor</royalFavorLabel>
-		<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
+		</royalTitleTags>		
+		<royalFavorLabel>Contribution</royalFavorLabel>
+		<royalFavorIconPath>Icon/Moyo_CartelIcon</royalFavorIconPath>
 		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
 		<royalTitleInheritanceRelations>
 		  <li>Child</li>
-		  <li>Grandchild</li>
-		  <li>GreatGrandchild</li>
-		  <li>NephewOrNiece</li>
 		  <li>Spouse</li>
 		  <li>Sibling</li>
 		  <li>HalfSibling</li>
-		  <li>Cousin</li>
 		  <li>Parent</li>
-		  <li>UncleOrAunt</li>
 		</royalTitleInheritanceRelations>		
 		<colorSpectrum>
 			<li>(117, 46, 183)</li>

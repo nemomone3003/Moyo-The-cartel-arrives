@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TradeCartel.label>카르텔과의 거래</TradeCartel.label>
+  <Cartel_DrugDropA.label>기본적 딥블루 지원</Cartel_DrugDropA.label>
+  <Cartel_DrugDropA.description>간단한 딥블루 약물 패키지를 요청합니다.</Cartel_DrugDropA.description>
+  <Cartel_DrugDropB.label>딥블루 지원</Cartel_DrugDropB.label>
+  <Cartel_DrugDropB.description>딥블루 약물 패키지를 요청합니다.</Cartel_DrugDropB.description>
+  <Cartel_MedicineDrop.label>의료물자 지원</Cartel_MedicineDrop.label>
+  <Cartel_MedicineDrop.description>딥블루와 관련된 의료물자 패키지를 요청합니다.</Cartel_MedicineDrop.description>
+  <Cartel_BelialDrop.label>벨리알-V 요청</Cartel_BelialDrop.label>
+  <Cartel_BelialDrop.description>벨리알-V 패키지를 요청합니다.</Cartel_BelialDrop.description>
+  <Cartel_MachineDrop.label>카르텔 고급부품 지원</Cartel_MachineDrop.label>
+  <Cartel_MachineDrop.description>1개의 카르텔 고급부품 요청합니다.</Cartel_MachineDrop.description>
+  <Cartel_StrikerPatrol.label>정찰대 요청</Cartel_StrikerPatrol.label>
+  <Cartel_StrikerPatrol.description>당신의 전투를 지원할 3명의 타격대 정찰대원을 요청합니다.</Cartel_StrikerPatrol.description>
+  <Cartel_StrikerTeam.label>타격조 호출</Cartel_StrikerTeam.label>
+  <Cartel_StrikerTeam.description>당신의 전투를 지원할 6명의 카르텔 타격조를 호출합니다.</Cartel_StrikerTeam.description>
+  <Cartel_SniperTeam.label>저격수 요청</Cartel_SniperTeam.label>
+  <Cartel_SniperTeam.description>당신의 전투를 지원할 2명의 저격팀을 요청합니다.</Cartel_SniperTeam.description>
+  <Cartel_SniperEliteTeam.label>정예 저격수 요청</Cartel_SniperEliteTeam.label>
+  <Cartel_SniperEliteTeam.description>당신의 전투를 지원할 2명의 정예 저격팀을 요청합니다.</Cartel_SniperEliteTeam.description>
+  <Cartel_Executioner.label>처형인 요청</Cartel_Executioner.label>
+  <Cartel_Executioner.description>등대의 카르텔에 연락하여 당신의 적을 박살낼 처형인을 요청합니다.</Cartel_Executioner.description>
+</LanguageData>

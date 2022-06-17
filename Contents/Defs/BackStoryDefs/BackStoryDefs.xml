@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--템플릿-->
+	<!--<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_Backstory</defName>
+		<title>name</title>
+		<titleShort>name</titleShort>
+		<baseDescription>backstory</baseDescription>
+		<slot>hood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>2</amount>
+			</li>			
+			<li>
+				<defName>Artistic</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>			
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>						
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li></li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>-->
+	<!-- 카르텔 징집병 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_CartelSoldier</defName>
+		<title>Cartel conscripted soldier</title>
+		<titleShort>conscripted soldier</titleShort>
+		<baseDescription>[PAWN_nameDef] is a conscripted soldier of the Cartel. When the situation is dire,being paied a minimun wage to fight under the Cartel is the best option to survive.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_CartelCombatant</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 카르텔 용병 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_CartelMerc</defName>
+		<title>Cartel mercenary</title>
+		<titleShort>mercenary</titleShort>
+		<baseDescription>[PAWN_nameDef] is an individual who has contracted with the Cartel. trained for combat, [PAWN_pronoun] has earned quite fortune from constant job opportunity provided by the Cartel.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo_CartelCombatant</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 카르텔 타격대 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_CartelStriker</defName>
+		<title>Cartel member of strike force</title>
+		<titleShort>strike force</titleShort>
+		<baseDescription>[PAWN_nameDef] is a member of the Cartel strike force. Dispatched in with her team or [PAWN_possesive]self, [PAWN_pronoun]was the one who does the Cartel's dirty jobs.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-1</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories Inherit="False">
+			<li>Moyo_CartelCombatant</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!-- 카르텔 타격대(지원군) -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_CartelStrikerRF</defName>
+		<title>Cartel member of strike force</title>
+		<titleShort>strike force</titleShort>
+		<baseDescription>[PAWN_nameDef] is a member of the Cartel strike force. Dispatched in with her team or [PAWN_possesive]self, [PAWN_pronoun] was the one who does the Cartel's dirty jobs.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-1</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories Inherit="False">
+			<li>Moyo_CartelBaseReinforce</li>
+		</spawnCategories>
+		<forcedHediffs>
+			<li>CartelReinforce_Base</li>
+		</forcedHediffs>
+	</AlienRace.BackstoryDef>
+	<!-- 카르텔 저격수 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_CartelSniper</defName>
+		<title>Cartel sniper</title>
+		<titleShort>sniper</titleShort>
+		<baseDescription>[PAWN_nameDef] was trained to be a sniper who operates on the surface. Even though they are not treated well inside the Lighthouse [PAWN_pronoun] is second to none when it comes to precision shooting.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-3</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories Inherit="False">
+			<li>Moyo_CartelSniper</li>
+		</spawnCategories>
+		<disallowedTraits>
+			<li>
+				<defName>Brawler</defName>
+			</li>
+		</disallowedTraits>
+	</AlienRace.BackstoryDef>
+	<!-- 카르텔 저격수 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_CartelSniperRF</defName>
+		<title>Cartel sniper</title>
+		<titleShort>sniper</titleShort>
+		<baseDescription>[PAWN_nameDef] was trained to be a sniper who operates on the surface. Even though they are not treated well inside the Lighthouse [PAWN_pronoun] is second to none when it comes to precision shooting.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-3</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories Inherit="False">
+			<li>Moyo_CartelSniperReinforce</li>
+		</spawnCategories>
+		<disallowedTraits>
+			<li>
+				<defName>Brawler</defName>
+			</li>
+		</disallowedTraits>
+		<forcedHediffs>
+			<li>CartelReinforce_Sniper</li>
+		</forcedHediffs>
+	</AlienRace.BackstoryDef>
+	<!-- 카르텔 엘리트 저격수 -->
+	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
+		<defName>Moyo_CartelSniperRF_E</defName>
+		<title>Cartel elite sniper</title>
+		<titleShort>elite  sniper</titleShort>
+		<baseDescription>[PAWN_nameDef]'s bullet seems to never miss its target. [PAWN_pronoun] is one of the most elite member of the surface sniper team. No one in the Cartel dares to throw shade at [PAWN_possesive], [PAWN_pronoun] could be watching it all with [PAWN_possesive] aim locked on their head.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>12</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-3</amount>
+			</li>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories Inherit="False">
+			<li>Moyo_CartelSniperReinforceElite</li>
+		</spawnCategories>
+		<disallowedTraits>
+			<li>
+				<defName>Brawler</defName>
+			</li>
+		</disallowedTraits>
+		<forcedTraits>
+			<li>
+				<defName>ShootingAccuracy</defName>
+				<degree>1</degree>
+			</li>
+		</forcedTraits>	
+		<forcedHediffs>
+			<li>CartelReinforce_EliteSniper</li>
+		</forcedHediffs>
+	</AlienRace.BackstoryDef>
+</Defs>

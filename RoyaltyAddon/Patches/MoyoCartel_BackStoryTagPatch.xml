@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Moyo-From the depth</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--moyo Heart, Tail-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_FarmChild"]/spawnCategories</xpath>
+					<value>
+						<li>Moyo_CartelCombatant</li>
+						<li>Moyo_CartelBaseReinforce</li>
+						<li>Moyo_CartelSniper</li>
+						<li>Moyo_CartelSniperReinforce</li>
+						<li>Moyo_CartelSniperReinforceElite</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_Orphan"]/spawnCategories</xpath>
+					<value>
+						<li>Moyo_CartelCombatant</li>
+						<li>Moyo_CartelBaseReinforce</li>
+						<li>Moyo_CartelSniper</li>
+						<li>Moyo_CartelSniperReinforce</li>
+						<li>Moyo_CartelSniperReinforceElite</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_Dreamer"]/spawnCategories</xpath>
+					<value>
+						<li>Moyo_CartelCombatant</li>
+						<li>Moyo_CartelBaseReinforce</li>
+						<li>Moyo_CartelSniper</li>
+						<li>Moyo_CartelSniperReinforce</li>
+						<li>Moyo_CartelSniperReinforceElite</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_Bully"]/spawnCategories</xpath>
+					<value>
+						<li>Moyo_CartelCombatant</li>
+						<li>Moyo_CartelBaseReinforce</li>
+						<li>Moyo_CartelSniper</li>
+						<li>Moyo_CartelSniperReinforce</li>
+						<li>Moyo_CartelSniperReinforceElite</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_PettyTheif"]/spawnCategories</xpath>
+					<value>
+						<li>Moyo_CartelCombatant</li>
+						<li>Moyo_CartelBaseReinforce</li>
+						<li>Moyo_CartelSniper</li>
+						<li>Moyo_CartelSniperReinforce</li>
+						<li>Moyo_CartelSniperReinforceElite</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_HuntingAssistant"]/spawnCategories</xpath>
+					<value>
+						<li>Moyo_CartelCombatant</li>
+						<li>Moyo_CartelBaseReinforce</li>
+						<li>Moyo_CartelSniper</li>
+						<li>Moyo_CartelSniperReinforce</li>
+						<li>Moyo_CartelSniperReinforceElite</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_YoungJunkie"]/spawnCategories</xpath>
+					<value>
+						<li>Moyo_CartelCombatant</li>
+						<li>Moyo_CartelBaseReinforce</li>
+						<li>Moyo_CartelSniper</li>
+						<li>Moyo_CartelSniperReinforce</li>
+						<li>Moyo_CartelSniperReinforceElite</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_SmugglerRunner"]/spawnCategories</xpath>
+					<value>
+						<li>Moyo_CartelCombatant</li>
+						<li>Moyo_CartelBaseReinforce</li>
+						<li>Moyo_CartelSniper</li>
+						<li>Moyo_CartelSniperReinforce</li>
+						<li>Moyo_CartelSniperReinforceElite</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_ChildSoldier"]/spawnCategories</xpath>
+					<value>
+						<li>Moyo_CartelCombatant</li>
+						<li>Moyo_CartelBaseReinforce</li>
+						<li>Moyo_CartelSniper</li>
+						<li>Moyo_CartelSniperReinforce</li>
+						<li>Moyo_CartelSniperReinforceElite</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_VatgrownSoldier"]/spawnCategories</xpath>
+					<value>
+						<li>Moyo_CartelCombatant</li>
+						<li>Moyo_CartelBaseReinforce</li>
+						<li>Moyo_CartelSniper</li>
+						<li>Moyo_CartelSniperReinforce</li>
+						<li>Moyo_CartelSniperReinforceElite</li>
+					</value>
+				</li>					
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>Cartel_AdvancedMachine</defName>
+		<label>Cartel encrypted component</label>
+		<description>Advanced machinary manufactured by the Cartel of the Lighthouse. A mandatory component to for production of Cartel's unique machines.\n\nThe maufacturing procedure of this component is classified and only provides a limited amount to their close patrons.</description>
+		<graphicData>
+			<texPath>Things/Items/CartelComponent</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>500</MarketValue>
+			<Mass>0.6</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+</Defs>

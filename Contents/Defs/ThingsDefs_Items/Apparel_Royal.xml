@@ -3,8 +3,8 @@
 	<!-- 로얄 바디슈트 -->
 	<ThingDef ParentName="Moyo_ApparelBase">
 		<defName>Moyo_CartelRoyalsuit</defName>
-		<label>moyo experimental suit</label>
-		<description>A Peculiar looking bodysuit developed by the cartel. Its their effort to create an elegant wear with decent protection for the wearer. Mostly wore by important personnel of te cartel due to its cost.</description>
+		<label>Cartel executive suit</label>
+		<description>A Peculiar looking bodysuit made by the Cartel. Aimed to create an elegant wear with decent protection for the wearer. Mostly wore by important personnel of the cartel due to its cost.</description>
 		<graphicData>
 			<texPath>Things/Apparel/MoyoCartelroyalSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -74,8 +74,8 @@
 	<!--로열 6티어 코트-->
 	<ThingDef ParentName="Moyo_ApparelBase" Name="Moyo_CartelRobeBase">
 		<defName>Moyo_CartelRobeA</defName>
-		<label>moyo cartel executive coat A</label>	
-		<description>Extravagant clothes worn by the upper class of the lighthouse. Made with advanced matierals and studier than it seems.\n\nThe clothes are engraved with the symbol of one of the three elders.</description>
+		<label>Cartel executive coat A</label>	
+		<description>A Peculiar looking coat made by the Cartel. Made with advanced matierals and is studier than it seems.\n\nSuch apparels costs a fortune even to a Cartel officer.</description>
 		<graphicData>
 			<texPath>Things/Apparel/MoyoCartelCoat1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -142,7 +142,7 @@
 	
 	<ThingDef ParentName="Moyo_CartelRobeBase">
 		<defName>Moyo_CartelRobeB</defName>
-		<label>moyo cartel executive coat B</label>
+		<label>Cartel executive coat B</label>
 		<graphicData>
 			<texPath>Things/Apparel/MoyoCartelCoatB1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -156,8 +156,8 @@
 	<!-- 초인병 슈트 -->
 	<ThingDef ParentName="Moyo_PowerArmorBase">
 		<defName>Moyo_CEsuit</defName>
-		<label>moyo assasin elite suit</label>
-		<description>An advanced suit of armor specifically designed for the most elite operative of the cartel.\n\nIt has thinner armor than conventional powered armor, but it compensates its flaw with greatly improved mobility and built-in damage control unit.</description>
+		<label>Cartel executioner suit</label>
+		<description>An advanced suit of armor specifically designed for the most elite operative of the cartel.It has thinner armor than conventional powered armor, but it compensates its flaw with greatly improved mobility and built-in damage control unit.</description>
 		<graphicData>
 			<texPath>Things/Apparel/MoyoCEsuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -207,8 +207,8 @@
 	<!-- 초인병 헬멧 -->
 	<ThingDef ParentName="Moyo_PowerHelmetBase">
 		<defName>Moyo_CEhelmet</defName>
-		<label>moyo assasin elite helmet</label>
-		<description>An advanced helmet specifically designed for the most elite operative of the cartel.\n\nWith various combat assisters installed, it provides exellent protection to the wearer while aiding in combat.</description>
+		<label>Cartel executioner helmet</label>
+		<description>An advanced helmet specifically designed for the most elite operative of the cartel. With various combat assisters installed, it provides exellent protection to the wearer while aiding in combat.</description>
 		<graphicData>
 			<texPath>Things/Apparel/MoyoCEHelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

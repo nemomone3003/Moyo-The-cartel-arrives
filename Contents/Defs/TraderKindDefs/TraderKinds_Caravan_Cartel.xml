@@ -2,8 +2,10 @@
 <Defs>
 
   <TraderKindDef>
-    <defName>Caravan_MoyoCivil_BulkGoods</defName>
+    <defName>Caravan_MoyoCartel_BulkGoods</defName>
     <label>bulk goods trader</label>
+    <faction>Moyo_Cartel</faction>
+    <permitRequiredForTrading MayRequire="Ludeon.RimWorld.Royalty">TradeCartel</permitRequiredForTrading>		
     <stockGenerators>
 
       <!-- Resources -->
@@ -126,8 +128,10 @@
   <!--======================================================================================-->
 
   <TraderKindDef>
-    <defName>Caravan_MoyoCivil_CombatSupplier</defName>
+    <defName>Caravan_MoyoCartel_CombatSupplier</defName>
     <label>combat supplier</label>
+    <faction>Moyo_Cartel</faction>
+    <permitRequiredForTrading MayRequire="Ludeon.RimWorld.Royalty">TradeSettlement</permitRequiredForTrading>		
     <stockGenerators>
 
       <!-- Resources -->
@@ -204,8 +208,10 @@
   <!--======================================================================================-->
 
   <TraderKindDef>
-    <defName>Caravan_MoyoCivil_PirateMerchant</defName>
+    <defName>Caravan_MoyoCartel_PirateMerchant</defName>
     <label>slaver</label>
+    <faction>Moyo_Cartel</faction>
+    <permitRequiredForTrading MayRequire="Ludeon.RimWorld.Royalty">TradeSettlement</permitRequiredForTrading>		
     <requestable>false</requestable>
     <commonalityMultFromPopulationIntent>
       <points>
@@ -291,8 +297,10 @@
   <!--======================================================================================-->
 
   <TraderKindDef>
-    <defName>Caravan_MoyoCivil_Exotic</defName>
+    <defName>Caravan_MoyoCartel_Exotic</defName>
     <label>exotic goods trader</label>
+    <faction>Moyo_Cartel</faction>
+    <permitRequiredForTrading MayRequire="Ludeon.RimWorld.Royalty">TradeSettlement</permitRequiredForTrading>		
     <stockGenerators>
 
       <!-- Resources -->

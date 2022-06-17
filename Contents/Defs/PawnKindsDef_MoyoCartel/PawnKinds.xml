@@ -13,8 +13,8 @@
 	<!-- 카르텔 잡역부 -->
 	<PawnKindDef ParentName="CartelBasePawnKind">
 		<defName>Moyo_CartelLabourer</defName>
-		<label>cartel labourer</label>
-		<combatPower>70</combatPower>
+		<label>Cartel labourer</label>
+		<combatPower>40</combatPower>
 		<isFighter>false</isFighter>
 		<itemQuality>Normal</itemQuality>
 		<apparelTags>
@@ -38,17 +38,17 @@
 			<li>MedievalMeleeBasic</li>
 		</weaponTags>
 		<weaponMoney>250~350</weaponMoney>
-		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsChance>0.05</techHediffsChance>
 		<techHediffsMoney>600~1500</techHediffsMoney>
 		<techHediffsTags>
-			<li>Advanced</li>
+			<li>Simple</li>
 		</techHediffsTags>
 		<inventoryOptions>
-			<skipChance>0.7</skipChance>
+			<skipChance>0.9</skipChance>
 			<subOptionsChooseOne>
 				<li>
 					<thingDef>Silver</thingDef>
-					<countRange>35~70</countRange>
+					<countRange>5~20</countRange>
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
@@ -56,7 +56,7 @@
 	<!-- 카르텔 파견기술자 -->
 	<PawnKindDef ParentName="MoyoBasePawnKind">
 		<defName>Moyo_CartelTech</defName>
-		<label>cartel tech dispatch</label>
+		<label>Cartel tech dispatch</label>
 		<combatPower>90</combatPower>
 		<isFighter>true</isFighter>
 		<itemQuality>Normal</itemQuality>
@@ -76,6 +76,7 @@
 			<li>
 				<categories>
 					<li>Moyo_Engineer</li>
+					<li>Moyo_CartelCombatant</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -95,7 +96,7 @@
 	<!--카르텔 보병 -->
 	<PawnKindDef ParentName="CartelBasePawnKind">
 		<defName>Moyo_CartelTrooper</defName>
-		<label>cartel trooper</label>
+		<label>Cartel trooper</label>
 		<trader>true</trader>
 		<combatPower>90</combatPower>
 		<isFighter>true</isFighter>
@@ -115,7 +116,8 @@
 				<categories>
 					<li>Moyo_MiddleCriminal</li>
 					<li>Moyo_MiddleCivil</li>
-					<li>Moyo_TopCriminal</li>					
+					<li>Moyo_TopCriminal</li>
+					<li>Moyo_CartelCombatant</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -148,7 +150,7 @@
 	<!--카르텔 밀수업자 -->
 	<PawnKindDef ParentName="CartelBasePawnKind">
 		<defName>Moyo_CartelSmuggler</defName>
-		<label>moyo cartel smuggler</label>
+		<label>Cartel smuggler</label>
 		<trader>true</trader>
 		<combatPower>100</combatPower>
 		<isFighter>true</isFighter>
@@ -166,6 +168,7 @@
 			<li>
 				<categories>
 					<li>Moyo_MiddleCriminal</li>
+					<li>Moyo_CartelCombatant</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -197,7 +200,7 @@
 
 	<!-- 카르텔 타격대 -->
 	<PawnKindDef ParentName="CartelBasePawnKind" Name="CartelSoldierLight" Abstract="true">
-		<label>moyo cartel strike force</label>
+		<label>Cartel strike force</label>
 		<combatPower>170</combatPower>
 		<forceNormalGearQuality>false</forceNormalGearQuality>
 		<isFighter>true</isFighter>
@@ -215,6 +218,7 @@
 				<categories>
 					<li>Moyo_SoldierKind</li>
 					<li>Moyo_MiddleCriminal</li>
+					<li>Moyo_CartelStriker</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -251,12 +255,6 @@
 			<li>DeathAcidifier</li>
 		</techHediffsRequired>
 	</PawnKindDef>
-	<PawnKindDef ParentName="CartelSoldierLight">
-		<defName>Moyo_CartelLight_Merc</defName>
-		<techHediffsRequired>
-			<li>DeathAcidifier</li>
-		</techHediffsRequired>
-	</PawnKindDef>	
 	<!-- 근접 -->
 	<PawnKindDef ParentName="CartelSoldierLight">
 		<defName>Moyo_CartelLighMelee</defName>
@@ -276,7 +274,7 @@
 
 	<!-- 카르텔 저격수 -->
 	<PawnKindDef ParentName="CartelBasePawnKind" Name="CartelSniper" Abstract="true">
-		<label>cartel sniper</label>
+		<label>Cartel sniper</label>
 		<combatPower>200</combatPower>
 		<forceNormalGearQuality>false</forceNormalGearQuality>
 		<isFighter>true</isFighter>
@@ -326,18 +324,12 @@
 		<techHediffsRequired>
 			<li>DeathAcidifier</li>
 		</techHediffsRequired>
-	</PawnKindDef>
-	<PawnKindDef ParentName="CartelSniper">
-		<defName>Moyo_CartelSniper_Merc</defName>
-		<techHediffsRequired>
-			<li>DeathAcidifier</li>
-		</techHediffsRequired>
-	</PawnKindDef>		
+	</PawnKindDef>	
 
 	<!-- 카르텔 현장관리 -->
 	<PawnKindDef ParentName="CartelBasePawnKind" Name="Cartel_High">
 		<defName>Moyo_FieldExecutive</defName>
-		<label>moyo cartel field executive</label>
+		<label>Cartel field executive</label>
 		<minTitleRequired>CartelExecutive</minTitleRequired>
 		<combatPower>100</combatPower>
 		<itemQuality>Excellent</itemQuality>
@@ -392,56 +384,56 @@
 	</PawnKindDef>
 
 	<!-- 모요처형자 -->
-	<PawnKindDef ParentName="CartelBasePawnKind" Name="MoyoCartelExecuter">
-		<defName>Moyo_CartelExecuter</defName>
-		<label>moyo cartel executer</label>
-		<combatPower>700</combatPower>
-		<itemQuality>Excellent</itemQuality>
-		<isFighter>true</isFighter>
-		<initialWillRange>1</initialWillRange>
-		<initialResistanceRange>99</initialResistanceRange>
-		<apparelTags>
-			<li>Moyo_AssasinElite</li>
-			<li>BeltDefensePop</li>
-			<li>Moyo_Executive</li>
-		</apparelTags>
-		<apparelRequired>
-			<li>Moyo_CEsuit</li>
-			<li>Moyo_CEhelmet</li>
-		</apparelRequired>
-		<gearHealthRange>3~4</gearHealthRange>
-		<backstoryFiltersOverride>
-			<li>
-				<categories>
-					<li>Moyo_Guardian</li>
-				</categories>
-			</li>
-		</backstoryFiltersOverride>
-		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-		<apparelMoney>12000~16000</apparelMoney>
-		<weaponTags>
-			<li>Moyo_GuardianGun</li>
-		</weaponTags>
-		<weaponMoney>3000~8000</weaponMoney>
-		<biocodeWeaponChance>0.3</biocodeWeaponChance>
-		<techHediffsChance>0.3</techHediffsChance>
-		<techHediffsMoney>2000~3800</techHediffsMoney>
-		<techHediffsTags>
-			<li>Advanced</li>
-		</techHediffsTags>
-		<techHediffsRequired>
-			<li>BionicEye</li>
-			<li>BionicEye</li>
-		</techHediffsRequired>
-		<invNutrition>0</invNutrition>
-		<inventoryOptions>
-			<subOptionsChooseOne>
-				<li>
-					<thingDef>BlueGo</thingDef>
-					<countRange>1~1</countRange>
-					<choiceChance>100</choiceChance>
-				</li>
-			</subOptionsChooseOne>
-		</inventoryOptions>
-	</PawnKindDef>
+	<!-- <PawnKindDef ParentName="CartelBasePawnKind" Name="MoyoCartelExecuter"> -->
+		<!-- <defName>Moyo_CartelExecuter</defName> -->
+		<!-- <label>Cartel executer</label> -->
+		<!-- <combatPower>700</combatPower> -->
+		<!-- <itemQuality>Excellent</itemQuality> -->
+		<!-- <isFighter>true</isFighter> -->
+		<!-- <initialWillRange>1</initialWillRange> -->
+		<!-- <initialResistanceRange>99</initialResistanceRange> -->
+		<!-- <apparelTags> -->
+			<!-- <li>Moyo_AssasinElite</li> -->
+			<!-- <li>BeltDefensePop</li> -->
+			<!-- <li>Moyo_Executive</li> -->
+		<!-- </apparelTags> -->
+		<!-- <apparelRequired> -->
+			<!-- <li>Moyo_CEsuit</li> -->
+			<!-- <li>Moyo_CEhelmet</li> -->
+		<!-- </apparelRequired> -->
+		<!-- <gearHealthRange>3~4</gearHealthRange> -->
+		<!-- <backstoryFiltersOverride> -->
+			<!-- <li> -->
+				<!-- <categories> -->
+					<!-- <li>Moyo_Guardian</li> -->
+				<!-- </categories> -->
+			<!-- </li> -->
+		<!-- </backstoryFiltersOverride> -->
+		<!-- <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance> -->
+		<!-- <apparelMoney>12000~16000</apparelMoney> -->
+		<!-- <weaponTags> -->
+			<!-- <li>Moyo_GuardianGun</li> -->
+		<!-- </weaponTags> -->
+		<!-- <weaponMoney>3000~8000</weaponMoney> -->
+		<!-- <biocodeWeaponChance>0.3</biocodeWeaponChance> -->
+		<!-- <techHediffsChance>0.3</techHediffsChance> -->
+		<!-- <techHediffsMoney>2000~3800</techHediffsMoney> -->
+		<!-- <techHediffsTags> -->
+			<!-- <li>Advanced</li> -->
+		<!-- </techHediffsTags> -->
+		<!-- <techHediffsRequired> -->
+			<!-- <li>BionicEye</li> -->
+			<!-- <li>BionicEye</li> -->
+		<!-- </techHediffsRequired> -->
+		<!-- <invNutrition>0</invNutrition> -->
+		<!-- <inventoryOptions> -->
+			<!-- <subOptionsChooseOne> -->
+				<!-- <li> -->
+					<!-- <thingDef>BlueGo</thingDef> -->
+					<!-- <countRange>1~1</countRange> -->
+					<!-- <choiceChance>100</choiceChance> -->
+				<!-- </li> -->
+			<!-- </subOptionsChooseOne> -->
+		<!-- </inventoryOptions> -->
+	<!-- </PawnKindDef> -->
 </Defs>

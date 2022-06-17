@@ -16,8 +16,9 @@
 				<li>Moyo_CShelmet</li>
 				<li>Moyo_CEsuit</li>
 				<li>Moyo_CEhelmet</li>
-				<!-- <li>Moyo_CBsuit</li> -->
-				<!-- <li>Moyo_CBhelmet</li> -->
+				<li>Moyo_CBsuit</li>
+				<li>Moyo_CBhelmet</li>
+				<li>Moyo_CartelStrikerHood</li>
 			</value>
 		</match>
 	</Operation>

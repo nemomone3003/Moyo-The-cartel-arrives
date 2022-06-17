@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TraderKindDef>
+		<defName>MoyoCartel_Caravan_TributeCollector</defName>
+		<label>Cartel contracters</label>
+		<requestable>True</requestable>
+		<commonality>1</commonality>
+		<category>TributeCollector</category>
+		<tradeCurrency>Favor</tradeCurrency>
+		<faction>Moyo_Cartel</faction>
+		<hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
+		<stockGenerators>
+			<!-- Buying -->
+			<li Class="StockGenerator_BuySlaves" />
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Gold</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Moyo_AbyssPearl</thingDef>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+</Defs>

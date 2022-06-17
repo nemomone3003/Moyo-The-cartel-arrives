@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Moyo_CartelLabourer.label>카르텔 노동자</Moyo_CartelLabourer.label>
+  <Moyo_CartelTech.label>카르텔 파견기술자</Moyo_CartelTech.label>
+  <Moyo_CartelTrooper.label>카르텔 보병</Moyo_CartelTrooper.label>
+  <Moyo_CartelSmuggler.label>카르텔 밀수업자</Moyo_CartelSmuggler.label>
+  <Moyo_CartelLight.label>카르텔 타격대</Moyo_CartelLight.label>
+  <Moyo_CartelLight_Acidifier.label>카르텔 타격대</Moyo_CartelLight_Acidifier.label>
+  <Moyo_CartelLighMelee.label>카르텔 타격대</Moyo_CartelLighMelee.label>
+  <Moyo_CartelLightMelee_Acidifier.label>카르텔 타격대</Moyo_CartelLightMelee_Acidifier.label>
+  <Moyo_CartelSniper_Acidifier.label>카르텔 저격수</Moyo_CartelSniper_Acidifier.label>
+  <Moyo_FieldExecutive.label>카르텔 현장담장자</Moyo_FieldExecutive.label>
+  <Moyo_CartelNegotiator.label>카르텔 협상가</Moyo_CartelNegotiator.label>
+</LanguageData>

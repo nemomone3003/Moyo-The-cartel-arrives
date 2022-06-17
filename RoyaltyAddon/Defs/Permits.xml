@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RoyalTitlePermitDef>
+		<defName>TradeCartel</defName>
+		<label>trade with the Cartel</label>
+	</RoyalTitlePermitDef>
+	<!-- 허가증 -->
+	<RoyalTitlePermitDef Name="Cartel_DropResourcesBase" Abstract="True">
+		<workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+		<faction>Moyo_Cartel</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>45</cooldownDays>
+		<usableOnWorldMap>true</usableOnWorldMap>
+		<royalAid>
+			<targetingRange>39.9</targetingRange>
+		</royalAid>
+	</RoyalTitlePermitDef>
+	<!--약물 지원-->
+	<RoyalTitlePermitDef ParentName="Cartel_DropResourcesBase">
+		<defName>Cartel_DrugDropA</defName>
+		<label>basic drug drop</label>
+		<description>Request in a bundle of basic deepblue drugs.</description>
+		<minTitle>Cartel_AlphaMember</minTitle>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,0)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<BlueGo>3</BlueGo>
+				<BlueUp>3</BlueUp>
+				<BlueYo>3</BlueYo>
+				<AbyssSerum>10</AbyssSerum>
+			</itemsToDrop>
+			<favorCost>6</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+	<RoyalTitlePermitDef ParentName="Cartel_DropResourcesBase">
+		<defName>Cartel_DrugDropB</defName>
+		<label>advanced drug drop</label>
+		<description>Request in a bundle of advanced deepblue drugs.</description>
+		<minTitle>Cartel_BetaMember</minTitle>
+		<permitPointCost>2</permitPointCost>
+		<uiPosition>(0.9,0)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<DetoxerCobalt>2</DetoxerCobalt>
+				<SustainerLapis>2</SustainerLapis>
+				<BlueBurst>2</BlueBurst>
+				<AbyssSerum>15</AbyssSerum>
+			</itemsToDrop>
+			<favorCost>8</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+	<RoyalTitlePermitDef ParentName="Cartel_DropResourcesBase">
+		<defName>Cartel_MedicineDrop</defName>
+		<label>medical supply drop</label>
+		<description>Request in a bundle of deepblue-medical supplies.</description>
+		<minTitle>Cartel_BetaMember</minTitle>
+		<permitPointCost>2</permitPointCost>
+		<uiPosition>(0,1)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<BlueMed>2</BlueMed>
+				<PenoxyBlue>2</PenoxyBlue>
+				<Clensazure>2</Clensazure>
+				<MoyoMedicine>5</MoyoMedicine>
+			</itemsToDrop>
+			<favorCost>8</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+	<RoyalTitlePermitDef ParentName="Cartel_DropResourcesBase">
+		<defName>Cartel_BelialDrop</defName>
+		<label>belial-V drop</label>
+		<description>Request in a package of Belial-V.</description>
+		<minTitle>Cartel_OmegaMember</minTitle>
+		<permitPointCost>4</permitPointCost>
+		<uiPosition>(1.8,0)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<Moyo_BelialV>2</Moyo_BelialV>
+			</itemsToDrop>
+			<favorCost>8</favorCost>
+		</royalAid>
+		<cooldownDays>60</cooldownDays>
+	</RoyalTitlePermitDef>
+	<!--카르텔 부품-->
+	<RoyalTitlePermitDef ParentName="Cartel_DropResourcesBase">
+		<defName>Cartel_MachineDrop</defName>
+		<label>request cartel advanced component</label>
+		<description>Request 1 cartel advanced component.</description>
+		<minTitle>Cartel_BetaMember</minTitle>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,2)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<Cartel_AdvancedMachine>1</Cartel_AdvancedMachine>
+			</itemsToDrop>
+			<favorCost>4</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+	<!--타격대 지원-->
+	<RoyalTitlePermitDef>
+		<defName>Cartel_StrikerPatrol</defName>
+		<label>Request recon team</label>
+		<description>Request 3 cartel stiker recons to aid in your battle.</description>
+		<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+		<minTitle>Cartel_BetaMember</minTitle>
+		<faction>Moyo_Cartel</faction>
+		<permitPointCost>2</permitPointCost>
+		<uiPosition>(0,4)</uiPosition>
+		<royalAid>
+			<favorCost>6</favorCost>
+			<pawnKindDef>Moyo_CartelLight_Merc</pawnKindDef>
+			<pawnCount>3</pawnCount>
+			<targetingRange>39.9</targetingRange>
+		</royalAid>
+		<cooldownDays>60</cooldownDays>
+	</RoyalTitlePermitDef>
+	<RoyalTitlePermitDef>
+		<defName>Cartel_StrikerTeam</defName>
+		<label>Request Striker team</label>
+		<description>Request 6 cartel strikers to aid in your battle.</description>
+		<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+		<minTitle>Cartel_GammaMember</minTitle>
+		<faction>Moyo_Cartel</faction>
+		<permitPointCost>3</permitPointCost>
+		<prerequisite>Cartel_StrikerPatrol</prerequisite>
+		<uiPosition>(0.9,4)</uiPosition>
+		<royalAid>
+			<favorCost>10</favorCost>
+			<pawnKindDef>Moyo_CartelLight_Merc</pawnKindDef>
+			<pawnCount>6</pawnCount>
+			<targetingRange>39.9</targetingRange>
+		</royalAid>
+		<cooldownDays>60</cooldownDays>
+	</RoyalTitlePermitDef>
+	<!--저격수 지원-->
+	<RoyalTitlePermitDef>
+		<defName>Cartel_SniperTeam</defName>
+		<label>Request Cartel sniper team</label>
+		<description>Request 2 cartel snipers to aid in your battle.</description>
+		<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+		<minTitle>Cartel_BetaMember</minTitle>
+		<faction>Moyo_Cartel</faction>
+		<permitPointCost>2</permitPointCost>
+		<uiPosition>(0,5)</uiPosition>
+		<royalAid>
+			<favorCost>6</favorCost>
+			<pawnKindDef>Moyo_CartelSniper_Merc</pawnKindDef>
+			<pawnCount>2</pawnCount>
+			<targetingRange>39.9</targetingRange>
+		</royalAid>
+		<cooldownDays>60</cooldownDays>
+	</RoyalTitlePermitDef>
+	<RoyalTitlePermitDef>
+		<defName>Cartel_SniperEliteTeam</defName>
+		<label>Request Cartel elite sniper team</label>
+		<description>Request 2 cartel elite snipers to aid in your battle.</description>
+		<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+		<minTitle>Cartel_GammaMember</minTitle>
+		<faction>Moyo_Cartel</faction>
+		<permitPointCost>3</permitPointCost>
+		<prerequisite>Cartel_SniperTeam</prerequisite>
+		<uiPosition>(0.9,5)</uiPosition>
+		<royalAid>
+			<favorCost>10</favorCost>
+			<pawnKindDef>Moyo_CartelSniper_Merc</pawnKindDef>
+			<pawnCount>4</pawnCount>
+			<targetingRange>39.9</targetingRange>
+		</royalAid>
+		<cooldownDays>60</cooldownDays>
+	</RoyalTitlePermitDef>
+	<!--처형인 지원-->
+	<RoyalTitlePermitDef>
+		<defName>Cartel_Executioner</defName>
+		<label>Request Cartel executioner</label>
+		<description>Request the executioner to crush your foes.</description>
+		<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+		<minTitle>Cartel_OmegaMember</minTitle>
+		<faction>Moyo_Cartel</faction>
+		<permitPointCost>4</permitPointCost>
+		<uiPosition>(0,6)</uiPosition>
+		<royalAid>
+			<favorCost>99</favorCost>
+			<pawnKindDef>Moyo_CartelLight_Acidifier</pawnKindDef>
+			<pawnCount>1</pawnCount>
+			<targetingRange>39.9</targetingRange>
+		</royalAid>
+		<cooldownDays>120</cooldownDays>
+	</RoyalTitlePermitDef>
+</Defs>

@@ -13,12 +13,13 @@
 			<li>Moyo_TagToSell</li>
 		</weaponTags>
 	</ThingDef>
+	<!-- 근접무기 -->
 	<!-- 모요 컴뱃나이프 -->
 	<ThingDef ParentName="MoyoBaseMelee">
 		<defName>Moyo_CombatKnife</defName>
-		<label>Moyo combat knife</label>
+		<label>Cartel combat knife</label>
 		<techLevel>Spacer</techLevel>
-		<description>A knife is always handy to have, a quick and silent tool for 'various' work. The sharper the better.</description>
+		<description>A large combat knife forged with a cold, sharp edge. A handy tool and an effective weapon in one.\n\nDesigned with the intention to be used on the surface, this knife was made bigger and heavier than regular diving knife. It came with a bonus of menacing shape.</description>
 		<soundInteract>Interact_MonoSword</soundInteract>
 		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
 		<graphicData>
@@ -35,6 +36,15 @@
 			<Mass>0.5</Mass>
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>Machining</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>			
+		</recipeMaker>		
 		<costList>
 			<Plasteel>30</Plasteel>
 			<ComponentIndustrial>3</ComponentIndustrial>
@@ -58,7 +68,7 @@
 				<cooldownTime>1.7</cooldownTime>
 			</li>
 			<li>
-				<label>e</label>
+				<label>point</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
@@ -66,19 +76,13 @@
 				<cooldownTime>1.7</cooldownTime>
 			</li>
 		</tools>
-		<recipeMaker>
-			<researchPrerequisite>Machining</researchPrerequisite>
-			<recipeUsers Inherit="False">
-				<li>TableMachining</li>
-			</recipeUsers>
-		</recipeMaker>
 	</ThingDef>
 	<!-- 모요 카타나 -->
 	<ThingDef ParentName="MoyoBaseMelee">
 		<defName>Moyo_Katana</defName>
-		<label>moyo Vibroedge</label>
+		<label>Cartel vibroedge</label>
 		<techLevel>Ultra</techLevel>
-		<description>A thin blade inspired by a particular surface weapon equipped with a vibroblade. A pinnacle of abysstech, it cuts through even thick armor with ease. A quick and silent solution to whom rebel against the Cartel.</description>
+		<description>A thin blade inspired by a particular surface weapon equipped with a vibroblade. As a masterwork of the Cartel, it even cuts through thick armored plates with ease. Rumors say Cartel's mysterious elite operatives are armed with it.\n\n...Others say that there is a red vibroblade that was forged by a legendary smith of the lighthouse.</description>
 		<soundInteract>Interact_MonoSword</soundInteract>
 		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
 		<graphicData>
@@ -96,6 +100,16 @@
 			<WorkToMake>45000</WorkToMake>
 			<Mass>2.5</Mass>
 		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>GuardianModule</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>			
+		</recipeMaker>		
 		<costList>
 			<Plasteel>70</Plasteel>
 			<Moyo_Abyssteel>10</Moyo_Abyssteel>
@@ -130,33 +144,32 @@
 				<armorPenetration>0.9</armorPenetration>
 			</li>
 		</tools>
-		<recipeMaker>
-			<researchPrerequisite>MoyoChargedBolt</researchPrerequisite>
-			<recipeUsers Inherit="False">
-				<li>Moyo_FabricationBench</li>
-			</recipeUsers>
-			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-		</recipeMaker>
-		<thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-		</thingSetMakerTags>
 	</ThingDef>
+	<!-- 원거리 무기-->
 	<!-- 모요 펄스권총 -->
 	<ThingDef ParentName="CartelBaseGun">
 		<defName>Moyo_CartelPistol</defName>
-		<label>moyo pulse pistol</label>
-		<description>A pistol manufactured by the cartel. It fires a quick 3-round burst.\n\nThis weapon utilzes a different firing mechanism and a smaller, sharper chargebolt. This granted a a more lightweight weapon with stronger armor piercing capacity which the Cartel wanted.</description>
+		<label>Cartel sidearm</label>
+		<description>A 2-round burst sidearm of the Cartel. Compared to other firearms designed by the Cartel, it lacks in firepower while being the cheapest and the most compact weapon to keep by your side.\n\nMembers of the Cartel are exposed to constant threat. These threats ranging from Cartel competetor to Elder's operatives.</description>
 		<graphicData>
-			<texPath>Things/Weapons/MoyoCPistol</texPath>
+			<texPath>Things/Weapons/CartelSA1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
 		<uiIconScale>1.5</uiIconScale>
 		<recipeMaker>
+			<researchPrerequisite>GasOperation</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>		
 		<weaponTags>
 			<li>MoyoCartelBasicGun</li>
 		</weaponTags>
@@ -167,22 +180,17 @@
 			<AccuracyShort>0.72</AccuracyShort>
 			<AccuracyMedium>0.32</AccuracyMedium>
 			<AccuracyLong>0.11</AccuracyLong>
-			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 		</statBases>
-		<costList>
-			<Plasteel>20</Plasteel>
-			<Moyo_Abyssteel>5</Moyo_Abyssteel>
-			<ComponentIndustrial>4</ComponentIndustrial>
-		</costList>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_MoyoCartelPistol</defaultProjectile>
-				<warmupTime>0.4</warmupTime>
+				<warmupTime>0.5</warmupTime>
 				<burstShotCount>2</burstShotCount>
-				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-				<range>18.5</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<range>17.9</range>
 				<soundCast>Cartel_FireLight</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale>
@@ -197,47 +205,38 @@
 				<power>9</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
 		</tools>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_MoyoCartelPistol</defName>
-		<label>Moyo pulsebolt</label>
+		<label>Cartel chargebolt</label>
 		<graphicData>
-			<texPath>Things/Weapons/MoyoCPulseShot</texPath>
+			<texPath>Things/Weapons/MoyoCNeedleshot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>MoteGlow</shaderType>
 			<drawSize>0.7</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>7</damageAmountBase>
-			<armorPenetrationBase>0.4</armorPenetrationBase>
+			<damageAmountBase>4</damageAmountBase>
+			<armorPenetrationBase>0.13</armorPenetrationBase>
 			<speed>90</speed>
 		</projectile>
 	</ThingDef>
 	<!-- 모요 펄스리볼버 -->
 	<ThingDef ParentName="CartelBaseGun">
 		<defName>Moyo_CartelRevolver</defName>
-		<label>moyo handcannon</label>
-		<description>A handcannon manufactured by the cartel. while looking simillar to a modern revolver, it has no similarities in its mechanism.\n\nFavoured by the executives of the Cartel, this gun is both elegant and effective on its duty.</description>
+		<label>Cartel handcannon</label>
+		<description>A handcannon manufactured by the cartel. while looking simillar to a modern revolver, it has no similarities with its mechanism. Focused on delivering heavy payloads accuratly, this weapon is deadly when used by skilled shooter.\n\nThe Cartel was more open to adopting goods of the surface. Soon this weapon was developed and became a popular choice among Cartel's high ranking officers.</description>
 		<graphicData>
-			<texPath>Things/Weapons/MoyoCHandcannon</texPath>
+			<texPath>Things/Weapons/CartelHC1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
 		<uiIconScale>1.5</uiIconScale>
 		<recipeMaker>
 			<skillRequirements>
-				<Crafting>7</Crafting>
+				<Crafting>9</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<weaponTags>
@@ -252,9 +251,12 @@
 			<AccuracyLong>0.51</AccuracyLong>
 			<RangedWeapon_Cooldown>2.20</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+		</equippedStatOffsets>			
 		<costList>
 			<Moyo_Abyssteel>35</Moyo_Abyssteel>
-			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 		<verbs>
 			<li>
@@ -262,7 +264,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_MoyoCartelRevolver</defaultProjectile>
 				<warmupTime>0.6</warmupTime>
-				<range>23</range>
+				<range>22.9</range>
 				<soundCast>Cartel_FireRevolver</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -277,22 +279,13 @@
 				<power>9</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
 		</tools>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_MoyoCartelRevolver</defName>
-		<label>Moyo pulsebolt</label>
+		<label>Cartel chargebolt</label>
 		<graphicData>
-			<texPath>Things/Weapons/MoyoCPulseShot</texPath>
+			<texPath>Things/Weapons/MoyoCNeedleshot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>MoteGlow</shaderType>
 			<drawSize>0.7</drawSize>
@@ -305,23 +298,23 @@
 			<speed>80</speed>
 		</projectile>
 	</ThingDef>
-	<!-- 모요 펄스소총 -->
+	<!-- 카르텔 SMG -->
 	<ThingDef ParentName="CartelBaseGun">
-		<defName>Moyo_CarteCarbine</defName>
-		<label>moyo pulse carbine</label>
-		<description>A carbine manufactured by the cartel. reliable firerate and decent mobility is the strength of this weapon.\n\nIts specifically designed for cartel strike force, who needed to be agile and have firepower to pierce through thick plates of diving suits. And this is their answer for it.</description>
+		<defName>Moyo_CartelSMG</defName>
+		<label>Cartel SMG</label>
+		<description>SMG manufactured by the cartel. A standard issue weapon of Cartel strikers. Rapidly firing small armor-penetrating rounds, this weapon is perfect for hit-and-run tactics.\n\nThe Cartel knew they had no chance to win the elder's forces on a face-to-face battle, hence the strike force was founded by the Cartel to strike them where they are weak.</description>
 		<graphicData>
-			<texPath>Things/Weapons/MoyoCAR2</texPath>
+			<texPath>Things/Weapons/CartelSMG1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<WorkToMake>51000</WorkToMake>
 			<Mass>3.1</Mass>
-			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyTouch>0.7</AccuracyTouch>
 			<AccuracyShort>0.75</AccuracyShort>
-			<AccuracyMedium>0.7</AccuracyMedium>
-			<AccuracyLong>0.55</AccuracyLong>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
@@ -339,10 +332,84 @@
 			<Moyo_Abyssteel>55</Moyo_Abyssteel>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-			<li>RewardStandardQualitySuper</li>
-		</thingSetMakerTags>
+		<weaponTags>
+			<li>MoyoCartelGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MoyoCartelRifle</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>17.9</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>Cartel_FireMiddle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MoyoCartelSMG</defName>
+		<label>Cartel chargebolt</label>
+		<graphicData>
+			<texPath>Things/Weapons/MoyoCNeedleshot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<armorPenetrationBase>0.40</armorPenetrationBase>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>90</speed>
+		</projectile>
+	</ThingDef>
+	<!-- 카르텔 카빈 -->
+	<ThingDef ParentName="CartelBaseGun">
+		<defName>Moyo_CarteCarbine</defName>
+		<label>Cartel carbine</label>
+		<description>One of the Cartel strike force's arsenal. With longer effective range, this weapon fires 2 rounds in a hyperburst. Providing excellent accuracy over long distance.\n\nThis weapon has not seen many use inside the Lighthouse, but soon became one of the most used weapon of the Cartel being selected the weapon of choice of many surface operating strike forces.</description>
+		<graphicData>
+			<texPath>Things/Weapons/CartelAR1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>51000</WorkToMake>
+			<Mass>3.1</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>2.5</ShootingAccuracyPawn>
+		</equippedStatOffsets>		
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>55</Moyo_Abyssteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
 		<weaponTags>
 			<li>MoyoCartelGun</li>
 		</weaponTags>
@@ -353,8 +420,8 @@
 				<defaultProjectile>Bullet_MoyoCartelRifle</defaultProjectile>
 				<warmupTime>1.2</warmupTime>
 				<range>26.5</range>
-				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
 				<soundCast>Cartel_FireMiddle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -363,14 +430,6 @@
 		<tools>
 			<li>
 				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
@@ -381,9 +440,9 @@
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_MoyoCartelRifle</defName>
-		<label>Moyo pulsebolt</label>
+		<label>Cartel chargebolt</label>
 		<graphicData>
-			<texPath>Things/Weapons/MoyoCPulseShot</texPath>
+			<texPath>Things/Weapons/MoyoCNeedleshot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>MoteGlow</shaderType>
 		</graphicData>
@@ -394,15 +453,15 @@
 			<stoppingPower>0.7</stoppingPower>
 			<speed>90</speed>
 		</projectile>
-	</ThingDef>
+	</ThingDef>	
 	<!-- 모요 펄스랜스-->
 	<ThingDef ParentName="CartelBaseGun">
 		<defName>Moyo_CartelLongRifle</defName>
-		<label>moyo pulselance</label>
-		<description>A large rifle manufactured by the cartel. This weapon has sacrificed everthing for the sake of long range sniping. This particular weapon is designed soley for surface use.\n\nStories about cartel snipers are told on the surface. no matter where you are, that they are watching you.</description>
+		<label>Cartel arbalest</label>
+		<description>A large rifle of the Cartel developed soley for long range shooting. Equipped with various aiming assisters, its payload fired with a shattering boom strikes the target with a deadly accuracy.\n\nTraining dedicated snipers were a subject of debate even among the Cartel executives and snipers are not treated well in the Lighthouse 'til this day.</description>
 		<soundInteract>Cartel_WeaponInteract</soundInteract>
 		<graphicData>
-			<texPath>Things/Weapons/MoyoCRF</texPath>
+			<texPath>Things/Weapons/CartelRF1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -430,9 +489,6 @@
 			<Moyo_Abyssteel>60</Moyo_Abyssteel>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
-		</thingSetMakerTags>
 		<weaponTags>
 			<li>MoyoCartelGunUnique</li>
 		</weaponTags>
@@ -453,15 +509,6 @@
 				<label>stock</label>
 				<capacities>
 					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
 				</capacities>
 				<power>9</power>
 				<cooldownTime>2</cooldownTime>
@@ -471,7 +518,7 @@
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_MoyoCartelLongRifle</defName>
-		<label>moyo pulsebolt</label>
+		<label>Cartel chargebolt</label>
 		<graphicData>
 			<texPath>Things/Weapons/MoyoCNeedleshot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -480,175 +527,10 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>25</damageAmountBase>
+			<damageAmountBase>30</damageAmountBase>
 			<armorPenetrationBase>0.42</armorPenetrationBase>
 			<stoppingPower>1.8</stoppingPower>
 			<speed>150</speed>
-		</projectile>
-	</ThingDef>
-	<!-- 모요 펄스랜스 중화기-->
-	<ThingDef ParentName="CartelUnmakeableGun">
-		<defName>Moyo_CSHRifle</defName>
-		<label>moyo heavy pulselance</label>
-		<description>A large rifle manufactured by the cartel. This weapon has sacrificed everthing for the sake of long range sniping. This particular weapon is designed soley for surface use.\n\nStories about cartel snipers are told on the surface, that they are watching you.</description>
-		<soundInteract>Cartel_WeaponInteract</soundInteract>
-		<graphicData>
-			<texPath>Things/Weapons/MoyoCHRF</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
-		</graphicData>
-		<statBases>
-			<WorkToMake>85000</WorkToMake>
-			<Mass>8.2</Mass>
-			<AccuracyTouch>0.04</AccuracyTouch>
-			<AccuracyShort>0.21</AccuracyShort>
-			<AccuracyMedium>1</AccuracyMedium>
-			<AccuracyLong>1</AccuracyLong>
-			<RangedWeapon_Cooldown>8</RangedWeapon_Cooldown>
-		</statBases>
-		<equippedStatOffsets>
-			<ShootingAccuracyPawn>20</ShootingAccuracyPawn>
-		</equippedStatOffsets>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>11</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>Moyo_FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Moyo_Abyssteel>80</Moyo_Abyssteel>
-			<ComponentSpacer>3</ComponentSpacer>
-		</costList>
-		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
-		</thingSetMakerTags>
-		<weaponTags>
-			<li>MoyoCartelGunUnique</li>
-		</weaponTags>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_MoyoCartelLongRifle</defaultProjectile>
-				<warmupTime>6.5</warmupTime>
-				<range>70</range>
-				<soundCast>Cartel_Lancefire</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>10</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-		<equippedAngleOffset>45</equippedAngleOffset>
-	</ThingDef>
-	<!-- 모요 스마트건 -->
-	<ThingDef ParentName="CartelBaseGun">
-		<defName>MoyoCartelSmartGun</defName>
-		<label>moyo multi-pulser</label>
-		<description>Rapid-firing machine gun A carbine manufactured by the cartel. smaller projectile allowed a greater capacity, making it capable of supressing foes for an extended duration of time.\n\ndue to the fact that strike forces operate as a small group, overwhelming groups of enemies are a serious threat to them. to fight this issue, they made a weapon focused on crowd control rather than heavy armor penetration.</description>
-		<graphicData>
-			<texPath>Things/Weapons/MoyoCMG</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
-		</graphicData>
-		<statBases>
-			<WorkToMake>51000</WorkToMake>
-			<Mass>3.1</Mass>
-			<AccuracyTouch>0.6</AccuracyTouch>
-			<AccuracyShort>0.35</AccuracyShort>
-			<AccuracyMedium>0.3</AccuracyMedium>
-			<AccuracyLong>0.3</AccuracyLong>
-			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
-		</statBases>
-		<equippedStatOffsets>
-			<ShootingAccuracyPawn>2.5</ShootingAccuracyPawn>
-		</equippedStatOffsets>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>Moyo_FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Moyo_Abyssteel>60</Moyo_Abyssteel>
-			<ComponentSpacer>4</ComponentSpacer>
-		</costList>
-		<thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-			<li>RewardStandardQualitySuper</li>
-		</thingSetMakerTags>
-		<weaponTags>
-			<li>MoyoCartelGun_Heavy</li>
-		</weaponTags>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_MoyoCartelSmartGun</defaultProjectile>
-				<warmupTime>1.2</warmupTime>
-				<range>28.5</range>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-				<burstShotCount>20</burstShotCount>
-				<soundCast>Cartel_FireMiddle</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-		<equippedAngleOffset>45</equippedAngleOffset>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_MoyoCartelSmartGun</defName>
-		<label>Moyo pulsebolt</label>
-		<graphicData>
-			<texPath>Things/Weapons/MoyoCNeedleshot</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>MoteGlow</shaderType>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>6</damageAmountBase>
-			<armorPenetrationBase>0.15</armorPenetrationBase>
-			<stoppingPower>0.5</stoppingPower>
-			<speed>90</speed>
 		</projectile>
 	</ThingDef>
 </Defs>

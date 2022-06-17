@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_MoyoADS</defName>
+		<graphicData>
+			<texPath>Things/Building/Mote_MoyoADS</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<color>(1, 1, 1)</color>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.50</fadeInTime>
+			<solidTime>4</solidTime>
+			<fadeOutTime>.6</fadeOutTime>
+			<growthRate>0.01</growthRate>
+		</mote>
+	</ThingDef>	
+</Defs>

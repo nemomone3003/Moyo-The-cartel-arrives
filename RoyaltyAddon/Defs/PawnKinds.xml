@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<PawnKindDef ParentName="CartelSoldierLight">
+		<defName>Moyo_CartelLight_Merc</defName>
+		<backstoryFiltersOverride inherit="False">
+			<li>
+				<categories>
+					<li>Moyo_CartelBaseReinforce</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>		
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<inventoryOptions>
+			<subOptionsChooseOne inherit="False">
+				<li>
+					<thingDef>BlueGo</thingDef>
+					<countRange>1~1</countRange>
+					<choiceChance>100</choiceChance>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+	</PawnKindDef>	
+	<PawnKindDef ParentName="CartelSniper">
+		<defName>Moyo_CartelSniper_Merc</defName>
+		<backstoryFiltersOverride inherit="False">
+			<li>
+				<categories>
+					<li>Moyo_CartelSniperReinforce</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>			
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<inventoryOptions>
+			<subOptionsChooseOne inherit="False">
+				<li>
+					<thingDef>BlueGo</thingDef>
+					<countRange>1~1</countRange>
+					<choiceChance>100</choiceChance>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+	</PawnKindDef>
+	<PawnKindDef ParentName="CartelSniper">
+		<defName>Moyo_CartelEliteSniper_Merc</defName>
+		<label>Cartel elite sniper</label>
+		<backstoryFiltersOverride inherit="False">
+			<li>
+				<categories>
+					<li>Moyo_CartelSniperReinforceElite</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>			
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>BionicEye</li>
+			<li>BionicEye</li>			
+		</techHediffsRequired>	
+		<inventoryOptions inherit="False">
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>BlueGo</thingDef>
+					<countRange>1~1</countRange>
+					<choiceChance>100</choiceChance>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+	</PawnKindDef>
+</Defs>
