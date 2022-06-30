@@ -168,7 +168,7 @@
 		<defName>Moyo_Cartel</defName>
 		<label>moyo Cartel</label>
 		<description>The cartel that dwells in the depth, spreading their influence in the Lighthouse. Being a part of the civil war, now looking for buisness opportunity on the surface.\n\nEven if they are a sub branch of the Cartel, they are still a faction with formidable power. You may fight against them or be their business partner, the choice is yours.</description>
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<factionNameMaker>CartelFactionNamer</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<settlementTexturePath>Icon/Moyo_CartelIcon</settlementTexturePath>
 		<factionIconPath>Icon/Moyo_CartelIcon</factionIconPath>
