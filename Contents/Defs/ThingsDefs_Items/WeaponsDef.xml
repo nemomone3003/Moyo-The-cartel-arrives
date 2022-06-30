@@ -300,7 +300,7 @@
 	</ThingDef>
 	<!-- 카르텔 SMG -->
 	<ThingDef ParentName="CartelBaseGun">
-		<defName>Moyo_CartelSMG</defName>
+		<defName>Moyo_CartelSMGa</defName>
 		<label>Cartel SMG</label>
 		<description>SMG manufactured by the cartel. A standard issue weapon of Cartel strikers. Rapidly firing small armor-penetrating rounds, this weapon is perfect for hit-and-run tactics.\n\nThe Cartel knew they had no chance to win the elder's forces on a face-to-face battle, hence the strike force was founded by the Cartel to strike them where they are weak.</description>
 		<graphicData>

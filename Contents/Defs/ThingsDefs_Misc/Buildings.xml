@@ -77,7 +77,7 @@
 	<ThingDef ParentName="CartelAutoSynthesis">
 		<defName>Cartel_AutoSynthesys_BlueBurst</defName>
 		<label>drug synthesis station: Blueburst</label>
-		<description>A complex machine that automatically synthesize deepblue into more complex drugs./n/nThis configuration synthesyses blueburst.</description>
+		<description>A complex machine that automatically synthesize deepblue into more complex drugs.\n\nThis configuration synthesyses blueburst.</description>
 		<uiIconPath>Things/Building/MoyoADS3</uiIconPath>
 		<comps>
 			<li Class="CompProperties_Refuelable">
@@ -113,7 +113,7 @@
 	<ThingDef ParentName="CartelAutoSynthesis">
 		<defName>Cartel_AutoSynthesys_BlueMed</defName>
 		<label>drug synthesis station: Regene-blue</label>
-		<description>A complex machine that automatically synthesize deepblue into more complex drugs./n/nThis configuration synthesyses regene-blue.</description>
+		<description>A complex machine that automatically synthesize deepblue into more complex drugs.\n\nThis configuration synthesyses regene-blue.</description>
 		<uiIconPath>Things/Building/MoyoADS6</uiIconPath>
 		<comps>
 			<li Class="CompProperties_Refuelable">
@@ -149,7 +149,7 @@
 	<ThingDef ParentName="CartelAutoSynthesis">
 		<defName>Cartel_AutoSynthesys_PenoxyBlue</defName>
 		<label>drug synthesis station: Penoxy-blue</label>
-		<description>A complex machine that automatically synthesize deepblue into more complex drugs./n/nThis configuration synthesyses penoxy-blue.</description>
+		<description>A complex machine that automatically synthesize deepblue into more complex drugs.\n\nThis configuration synthesyses penoxy-blue.</description>
 		<uiIconPath>Things/Building/MoyoADS5</uiIconPath>
 		<comps>
 			<li Class="CompProperties_Refuelable">
@@ -185,7 +185,7 @@
 	<ThingDef ParentName="CartelAutoSynthesis">
 		<defName>Cartel_AutoSynthesys_Clensazure</defName>
 		<label>drug synthesis station: Clear-azure</label>
-		<description>A complex machine that automatically synthesize deepblue into more complex drugs./n/nThis configuration synthesyses clear-azure.</description>
+		<description>A complex machine that automatically synthesize deepblue into more complex drugs.\n\nThis configuration synthesyses clear-azure.</description>
 		<uiIconPath>Things/Building/MoyoADS4</uiIconPath>
 		<comps>
 			<li Class="CompProperties_Refuelable">
@@ -221,7 +221,7 @@
 	<ThingDef ParentName="CartelAutoSynthesis">
 		<defName>Cartel_AutoSynthesys_SustainerLapis</defName>
 		<label>drug synthesis station: Sustainer-lapis</label>
-		<description>A complex machine that automatically synthesize deepblue into more complex drugs./n/nThis configuration synthesyses sustainer-lapis.</description>
+		<description>A complex machine that automatically synthesize deepblue into more complex drugs.\n\nThis configuration synthesyses sustainer-lapis.</description>
 		<uiIconPath>Things/Building/MoyoADS1</uiIconPath>
 		<comps>
 			<li Class="CompProperties_Refuelable">
@@ -257,7 +257,7 @@
 	<ThingDef ParentName="CartelAutoSynthesis">
 		<defName>Cartel_AutoSynthesys_DetoxerCobalt</defName>
 		<label>drug synthesis station: Detoxer-cobalt</label>
-		<description>A complex machine that automatically synthesize deepblue into more complex drugs./n/nThis configuration synthesyses detoxer-cobalt.</description>
+		<description>A complex machine that automatically synthesize deepblue into more complex drugs.\n\nThis configuration synthesyses detoxer-cobalt.</description>
 		<uiIconPath>Things/Building/MoyoADS1</uiIconPath>
 		<comps>
 			<li Class="CompProperties_Refuelable">

@@ -42,9 +42,9 @@
   <Moyo_CartelRevolver.description>기존의 리볼버와 비슷한 형태를 가졌지만 작동 구조는 전혀 관련이 없는 카르텔의 핸드캐논입니다.  연사속도보단 한 발 한 발의 파괴력에 집중했습니다.\n\n카르텔은 지상의 문물을 받아들이는 것에 더 관대했고, 곧이어 나온 이 무기는 많은 고위층 인사들이 선호하는 무기가 되었습니다.</Moyo_CartelRevolver.description>
   <Moyo_CartelRevolver.tools.0.label>손잡이</Moyo_CartelRevolver.tools.0.label>
   <Bullet_MoyoCartelRevolver.label>카르텔 전자기볼트</Bullet_MoyoCartelRevolver.label>
-  <Moyo_CartelSMG.label>카르텔 SMG</Moyo_CartelSMG.label>
-  <Moyo_CartelSMG.description>카르텔이 제작한 SMG로, 타격대들에게 제식으로 지급되는 무기입니다. 소형 관통탄을 연사하는 이 무기는 치고 빠지기에 특화된 무기입니다.\n\n전면전에선 승산이 없는 것을 알고 있는 카르텔은 게릴라 전술에 특회된 타격대를 조직해 적의 취약점을 공략했습니다.</Moyo_CartelSMG.description>
-  <Moyo_CartelSMG.tools.0.label>개머리판</Moyo_CartelSMG.tools.0.label>
+  <Moyo_CartelSMGa.label>카르텔 SMG</Moyo_CartelSMGa.label>
+  <Moyo_CartelSMGa.description>카르텔이 제작한 SMG로, 타격대들에게 제식으로 지급되는 무기입니다. 소형 관통탄을 연사하는 이 무기는 치고 빠지기에 특화된 무기입니다.\n\n전면전에선 승산이 없는 것을 알고 있는 카르텔은 게릴라 전술에 특회된 타격대를 조직해 적의 취약점을 공략했습니다.</Moyo_CartelSMGa.description>
+  <Moyo_CartelSMGa.tools.0.label>개머리판</Moyo_CartelSMGa.tools.0.label>
   <Bullet_MoyoCartelSMG.label>카르텔 전자기볼트</Bullet_MoyoCartelSMG.label>
   <Moyo_CarteCarbine.label>카르텔 카빈</Moyo_CarteCarbine.label>
   <Moyo_CarteCarbine.description>중장거리 교전에 집중한 카르텔 타격대의 무기입니다. 매우 짧은 간격으로 2발을 점사하며, 높은 명중률을 보여줍니다.\n\n등대 내부에선 큰 활약을 보이지 못했지만 카르텔이 지상으로 진출한 후 가장 널리 쓰이는 무기 중 하나가 되었습니다.</Moyo_CarteCarbine.description>
@@ -56,20 +56,20 @@
   <Bullet_MoyoCartelLongRifle.label>카르텔 전자기볼트</Bullet_MoyoCartelLongRifle.label>
   <Cartel_AutoSynthesys_BlueBurst.comps.3.mote.0.label>ADS1</Cartel_AutoSynthesys_BlueBurst.comps.3.mote.0.label>
   <Cartel_AutoSynthesys_BlueBurst.label>약물합성기: 블루버스트</Cartel_AutoSynthesys_BlueBurst.label>
-  <Cartel_AutoSynthesys_BlueBurst.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다./n/n해당 설정은 블루버스트를 합성합니다.</Cartel_AutoSynthesys_BlueBurst.description>
+  <Cartel_AutoSynthesys_BlueBurst.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다.\n\n해당 설정은 블루버스트를 합성합니다.</Cartel_AutoSynthesys_BlueBurst.description>
   <Cartel_AutoSynthesys_BlueMed.comps.3.mote.0.label>ADS1</Cartel_AutoSynthesys_BlueMed.comps.3.mote.0.label>
   <Cartel_AutoSynthesys_BlueMed.label>약물합성기: 리제네-블루</Cartel_AutoSynthesys_BlueMed.label>
-  <Cartel_AutoSynthesys_BlueMed.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다./n/n해당 설정은 리제네-블루를 합성합니다.</Cartel_AutoSynthesys_BlueMed.description>
+  <Cartel_AutoSynthesys_BlueMed.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다.\n\n해당 설정은 리제네-블루를 합성합니다.</Cartel_AutoSynthesys_BlueMed.description>
   <Cartel_AutoSynthesys_PenoxyBlue.comps.3.mote.0.label>ADS1</Cartel_AutoSynthesys_PenoxyBlue.comps.3.mote.0.label>
   <Cartel_AutoSynthesys_PenoxyBlue.label>약물합성기: 페녹시-블루</Cartel_AutoSynthesys_PenoxyBlue.label>
-  <Cartel_AutoSynthesys_PenoxyBlue.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다./n/n해당 설정은 페녹시-블루를 합성합니다.</Cartel_AutoSynthesys_PenoxyBlue.description>
+  <Cartel_AutoSynthesys_PenoxyBlue.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다.\n\n해당 설정은 페녹시-블루를 합성합니다.</Cartel_AutoSynthesys_PenoxyBlue.description>
   <Cartel_AutoSynthesys_Clensazure.comps.3.mote.0.label>ADS1</Cartel_AutoSynthesys_Clensazure.comps.3.mote.0.label>
   <Cartel_AutoSynthesys_Clensazure.label>약물합성기: 클리어-애쥬어</Cartel_AutoSynthesys_Clensazure.label>
-  <Cartel_AutoSynthesys_Clensazure.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다./n/n해당 설정은 클리어-애쥬어를 합성합니다</Cartel_AutoSynthesys_Clensazure.description>
+  <Cartel_AutoSynthesys_Clensazure.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다.\n\n해당 설정은 클리어-애쥬어를 합성합니다</Cartel_AutoSynthesys_Clensazure.description>
   <Cartel_AutoSynthesys_SustainerLapis.comps.3.mote.0.label>ADS1</Cartel_AutoSynthesys_SustainerLapis.comps.3.mote.0.label>
   <Cartel_AutoSynthesys_SustainerLapis.label>약물합성기: 서스테이너-라피스</Cartel_AutoSynthesys_SustainerLapis.label>
-  <Cartel_AutoSynthesys_SustainerLapis.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다./n/n해당 설정은 서스테이너-라피스를 합성합니다</Cartel_AutoSynthesys_SustainerLapis.description>
+  <Cartel_AutoSynthesys_SustainerLapis.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다.\n\n해당 설정은 서스테이너-라피스를 합성합니다</Cartel_AutoSynthesys_SustainerLapis.description>
   <Cartel_AutoSynthesys_DetoxerCobalt.comps.3.mote.0.label>ADS1</Cartel_AutoSynthesys_DetoxerCobalt.comps.3.mote.0.label>
   <Cartel_AutoSynthesys_DetoxerCobalt.label>약물합성기: 디톡서-코발트</Cartel_AutoSynthesys_DetoxerCobalt.label>
-  <Cartel_AutoSynthesys_DetoxerCobalt.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다./n/n해당 설정은 디톡서-코발트를 합성합니다</Cartel_AutoSynthesys_DetoxerCobalt.description>
+  <Cartel_AutoSynthesys_DetoxerCobalt.description>딥블루를 자동으로 복잡한 약물로 합성하는 복잡한 기계입니다.\n\n해당 설정은 디톡서-코발트를 합성합니다</Cartel_AutoSynthesys_DetoxerCobalt.description>
 </LanguageData>

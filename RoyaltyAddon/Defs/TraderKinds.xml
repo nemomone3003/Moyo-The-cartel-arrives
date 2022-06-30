@@ -5,7 +5,7 @@
 		<label>Cartel contracters</label>
 		<requestable>True</requestable>
 		<commonality>1</commonality>
-		<category>TributeCollector</category>
+		<!-- <category>TributeCollector</category> -->
 		<tradeCurrency>Favor</tradeCurrency>
 		<faction>Moyo_Cartel</faction>
 		<hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>

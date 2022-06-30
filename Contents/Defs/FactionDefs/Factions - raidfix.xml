@@ -62,10 +62,7 @@
 			</disallowedThingDefs>
 		</apparelStuffFilter>
 		<caravanTraderKinds>
-			<li>Caravan_MoyoCartel_BulkGoods</li>
-			<li>Caravan_MoyoCartel_CombatSupplier</li>
-			<li>Caravan_MoyoCartel_Exotic</li>
-			<li>Caravan_MoyoCartel_PirateMerchant</li>
+			<li>Caravan_MoyoCartel_Goods</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">MoyoCartel_Caravan_TributeCollector</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
@@ -135,17 +132,17 @@
 				<!-- 주둔지 -->
 				<kindDef>Settlement</kindDef>
 				<options>
-					<Moyo_CartelLabourer>5</Moyo_CartelLabourer>
-					<Moyo_CartelSmuggler>5</Moyo_CartelSmuggler>
+					<Moyo_CartelLabourer>2</Moyo_CartelLabourer>
+					<Moyo_CartelSmuggler>2</Moyo_CartelSmuggler>
 					<Moyo_CartelLight>20</Moyo_CartelLight>
-					<Moyo_CartelLighMelee>5</Moyo_CartelLighMelee>
+					<Moyo_CartelLighMelee>8</Moyo_CartelLighMelee>
 				</options>
 			</li>
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<Moyo_CartelLabourer>5</Moyo_CartelLabourer>
-					<Moyo_CartelSmuggler>5</Moyo_CartelSmuggler>
+					<Moyo_CartelLabourer>2</Moyo_CartelLabourer>
+					<Moyo_CartelSmuggler>2</Moyo_CartelSmuggler>
 					<Moyo_CartelTech>8</Moyo_CartelTech>
 					<Moyo_CartelTrooper>2</Moyo_CartelTrooper>
 				</options>
@@ -162,9 +159,7 @@
 					<Elephant>1</Elephant>
 				</carriers>
 				<guards>
-					<Moyo_CartelSmuggler>5</Moyo_CartelSmuggler>
-					<Moyo_CartelLight>20</Moyo_CartelLight>
-					<Moyo_CartelLighMelee>5</Moyo_CartelLighMelee>
+					<Moyo_CartelLight_Merc>5</Moyo_CartelLight_Merc>
 				</guards>
 			</li>
 		</pawnGroupMakers>
@@ -177,8 +172,9 @@
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<settlementTexturePath>Icon/Moyo_CartelIcon</settlementTexturePath>
 		<factionIconPath>Icon/Moyo_CartelIcon</factionIconPath>
+		<factionNameMaker>CartelFactionNamer</factionNameMaker>
 		<fixedLeaderKinds>
-			<li>Empire_Royal_Stellarch</li>
+			<li>Moyo_CartelLeader</li>
 		</fixedLeaderKinds>		
 		<royalTitleTags>
 			<li>MoyoCartelTitle</li>

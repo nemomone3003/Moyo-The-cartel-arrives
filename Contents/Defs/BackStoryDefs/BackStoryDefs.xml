@@ -245,7 +245,7 @@
 	<AlienRace.BackstoryDef ParentName="BaseMoyoBackStory">
 		<defName>Moyo_CartelSniperRF_E</defName>
 		<title>Cartel elite sniper</title>
-		<titleShort>elite  sniper</titleShort>
+		<titleShort>elite sniper</titleShort>
 		<baseDescription>[PAWN_nameDef]'s bullet seems to never miss its target. [PAWN_pronoun] is one of the most elite member of the surface sniper team. No one in the Cartel dares to throw shade at [PAWN_possesive], [PAWN_pronoun] could be watching it all with [PAWN_possesive] aim locked on their head.</baseDescription>
 		<slot>Adulthood</slot>
 		<skillGains>

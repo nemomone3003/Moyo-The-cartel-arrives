@@ -4,7 +4,7 @@
   <TraderKindDef>
     <defName>Base_MoyoCartel_Standard</defName>
     <faction>Moyo_Cartel</faction>
-    <permitRequiredForTrading MayRequire="Ludeon.RimWorld.Royalty">TradeSettlement</permitRequiredForTrading>	
+    <permitRequiredForTrading MayRequire="Ludeon.RimWorld.Royalty">TradeCartel</permitRequiredForTrading>	
     <stockGenerators>
 
       <!-- Resources -->

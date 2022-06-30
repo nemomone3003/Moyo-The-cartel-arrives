@@ -11,17 +11,17 @@
 	<!-- 카르텔 타격대 -->
 	<Moyo_CartelStriker.title>카르텔 타격대</Moyo_CartelStriker.title>
 	<Moyo_CartelStriker.titleShort>타격대</Moyo_CartelStriker.titleShort>
-	<Moyo_CartelStriker.baseDescription>[PAWN_nameDef](은)는 카르텔 타격대의 일원입니다. 홀로 또는 [PAWN_possesive]의 팀과 함께 파견되는 [PAWN_possesive]는 카르텔의 더러운 일을 도맡아 처리하는 사람입니다.</Moyo_CartelStriker.baseDescription>
+	<Moyo_CartelStriker.baseDescription>[PAWN_nameDef](은)는 카르텔 타격대의 일원입니다. 홀로 또는 [PAWN_pronoun]의 팀과 함께 파견되는 [PAWN_pronoun]는 카르텔의 더러운 일을 도맡아 처리하는 사람입니다.</Moyo_CartelStriker.baseDescription>
 	<Moyo_CartelStrikerRF.title>카르텔 타격대</Moyo_CartelStrikerRF.title>
 	<Moyo_CartelStrikerRF.titleShort>타격대</Moyo_CartelStrikerRF.titleShort>
-	<Moyo_CartelStrikerRF.baseDescription>[PAWN_nameDef](은)는 카르텔 타격대의 일원입니다. 홀로 또는 [PAWN_possesive]의 팀과 함께 파견되는 [PAWN_possesive]는 카르텔의 더러운 일을 도맡아 처리하는 사람입니다.</Moyo_CartelStrikerRF.baseDescription>
+	<Moyo_CartelStrikerRF.baseDescription>[PAWN_nameDef](은)는 카르텔 타격대의 일원입니다. 홀로 또는 [PAWN_pronoun]의 팀과 함께 파견되는 [PAWN_pronoun]는 카르텔의 더러운 일을 도맡아 처리하는 사람입니다.</Moyo_CartelStrikerRF.baseDescription>
 	<!-- 카르텔 저격수 -->
 	<Moyo_CartelSniper.title>카르텔 저격수</Moyo_CartelSniper.title>
 	<Moyo_CartelSniper.titleShort>저격수</Moyo_CartelSniper.titleShort>
 	<Moyo_CartelSniper.baseDescription>[PAWN_nameDef](은)는 지상에서 활동하기 위해 훈련된 저격수입니다. [PAWN_pronoun]의 사격 실력은 그 누구에게도 둘째가지 않지만 등대 내부에서 저격수들은 좋은 대우를 받지 못합니다.</Moyo_CartelSniper.baseDescription>
-	<Moyo_CartelSniper.title>카르텔 저격수</Moyo_CartelSniper.title>
-	<Moyo_CartelSniper.titleShort>저격수</Moyo_CartelSniper.titleShort>
-	<Moyo_CartelSniper.baseDescription>[PAWN_nameDef](은)는 지상에서 활동하기 위해 훈련된 저격수입니다. [PAWN_pronoun]의 사격 실력은 그 누구에게도 둘째가지 않지만 등대 내부에서 저격수들은 좋은 대우를 받지 못합니다.</Moyo_CartelSniper.baseDescription>
+	<Moyo_CartelSniperRF.title>카르텔 저격수</Moyo_CartelSniperRF.title>
+	<Moyo_CartelSniperRF.titleShort>저격수</Moyo_CartelSniperRF.titleShort>
+	<Moyo_CartelSniperRF.baseDescription>[PAWN_nameDef](은)는 지상에서 활동하기 위해 훈련된 저격수입니다. [PAWN_pronoun]의 사격 실력은 그 누구에게도 둘째가지 않지만 등대 내부에서 저격수들은 좋은 대우를 받지 못합니다.</Moyo_CartelSniperRF.baseDescription>
 	
 	<!-- 카르텔 엘리트 저격수 -->	
 	<Moyo_CartelSniperRF_E.title>카르텔 정예 저격수</Moyo_CartelSniperRF_E.title>

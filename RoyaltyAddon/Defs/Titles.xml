@@ -9,6 +9,7 @@
 		<allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
 		<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
 		<canBeInherited>False</canBeInherited>
+		<maxPsylinkLevel>0</maxPsylinkLevel>
 	</RoyalTitleDef>
 	<!-- 기본 맴버십 -->
 	<RoyalTitleDef ParentName="MoyoCartelTitleBase">
@@ -18,7 +19,7 @@
 		<seniority>100</seniority>
 		<favorCost>5</favorCost>
 		<recruitmentResistanceOffset>10</recruitmentResistanceOffset>
-		<commonality>0</commonality>
+		<commonality>1</commonality>
 		<permitPointsAwarded>0</permitPointsAwarded>
 		<changeHeirQuestPoints>1000</changeHeirQuestPoints>
 	</RoyalTitleDef>
@@ -31,24 +32,8 @@
 		<favorCost>8</favorCost>
 		<minExpectation>Low</minExpectation>
 		<recruitmentResistanceOffset>15</recruitmentResistanceOffset>
-		<commonality>0</commonality>
+		<commonality>1</commonality>
 		<permitPointsAwarded>2</permitPointsAwarded>
-		<permits>
-			<li>TradeCartel</li>
-		</permits>
-		<changeHeirQuestPoints>3000</changeHeirQuestPoints>
-	</RoyalTitleDef>
-	<!-- 비즈니스 파트너 -->
-	<RoyalTitleDef ParentName="MoyoCartelTitleBase">
-		<defName>Cartel_BetaMember</defName>
-		<label>collaborator: Beta</label>
-		<description>As a Beta degree collaborator, your place in the cartel is firmly set. the cartel appriciates your doing and more goods and services will be provided to you.</description>
-		<seniority>300</seniority>
-		<favorCost>13</favorCost>
-		<minExpectation>Moderate</minExpectation>
-		<recruitmentResistanceOffset>25</recruitmentResistanceOffset>
-		<commonality>0</commonality>
-		<permitPointsAwarded>6</permitPointsAwarded>
 		<disabledWorkTags>
 			<li>Cleaning</li>
 		</disabledWorkTags>
@@ -84,53 +69,6 @@
 				</allowedTags>
 			</li>
 		</requiredApparel>
-		<throneRoomRequirements>
-			<li Class="RoomRequirement_HasAssignedThroneAnyOf">
-				<things>
-					<li>Throne</li>
-					<li>GrandThrone</li>
-				</things>
-			</li>
-			<li Class="RoomRequirement_Area">
-				<area>24</area>
-			</li>
-			<li Class="RoomRequirement_TerrainWithTags">
-				<labelKey>RoomRequirementAllFloored</labelKey>
-				<tags>
-					<li>Floor</li>
-					<li>FineFloor</li>
-				</tags>
-			</li>
-			<li Class="RoomRequirement_ThingAnyOfCount">
-				<things>
-					<li>Brazier</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
-				</things>
-				<count>2</count>
-			</li>
-			<li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
-				<labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
-				<things>
-					<li>Brazier</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
-				</things>
-			</li>
-			<li Class="RoomRequirement_ForbiddenBuildings">
-				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
-				<buildingTags>
-					<li>Production</li>
-				</buildingTags>
-			</li>
-			<li Class="RoomRequirement_ForbiddenBuildings">
-				<labelKey>RoomRequirementNoBeds</labelKey>
-				<buildingTags>
-					<li>Bed</li>
-				</buildingTags>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
-				<labelKey>RoomRequirementNoAltars</labelKey>
-			</li>
-		</throneRoomRequirements>
 		<bedroomRequirements>
 			<li Class="RoomRequirement_Area">
 				<area>16</area>
@@ -168,19 +106,19 @@
 			</allowedDefs>
 		</foodRequirement>
 	</RoyalTitleDef>
-	<!-- 감마-동업자 -->
+	<!-- 비즈니스 파트너 -->
 	<RoyalTitleDef ParentName="MoyoCartelTitleBase">
-		<defName>Cartel_GammaMember</defName>
-		<label>Collaborater: Gamma</label>
-		<description>A core member of cartel's surface division. Gamma degree partners are indifferent from cartel officers. even having the right to dispatch strike teams.</description>
-		<seniority>400</seniority>
-		<favorCost>20</favorCost>
+		<defName>Cartel_BetaMember</defName>
+		<label>collaborator: Beta</label>
+		<description>As a Beta degree collaborator, your place in the cartel is firmly set. the cartel appriciates your doing and more goods and services will be provided to you.</description>
+		<seniority>300</seniority>
+		<favorCost>13</favorCost>
 		<minExpectation>Moderate</minExpectation>
 		<recruitmentResistanceOffset>25</recruitmentResistanceOffset>
-		<commonality>0</commonality>
-		<permitPointsAwarded>10</permitPointsAwarded>
+		<commonality>1</commonality>
+		<permitPointsAwarded>6</permitPointsAwarded>
 		<disabledWorkTags>
-			<li>ManualDumb</li>
+			<li>Cleaning</li>
 		</disabledWorkTags>
 		<permits>
 			<li>TradeCartel</li>
@@ -214,67 +152,6 @@
 				</allowedTags>
 			</li>
 		</requiredApparel>
-		<throneRoomRequirements>
-			<li Class="RoomRequirement_HasAssignedThroneAnyOf">
-				<things>
-					<li>Throne</li>
-					<li>GrandThrone</li>
-				</things>
-			</li>
-			<li Class="RoomRequirement_Area">
-				<area>30</area>
-			</li>
-			<li Class="RoomRequirement_Impressiveness">
-				<impressiveness>60</impressiveness>
-			</li>
-			<li Class="RoomRequirement_TerrainWithTags">
-				<labelKey>RoomRequirementAllFloored</labelKey>
-				<tags>
-					<li>Floor</li>
-					<li>FineFloor</li>
-				</tags>
-			</li>
-			<li Class="RoomRequirement_ThingAnyOfCount">
-				<things>
-					<li>Brazier</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
-				</things>
-				<count>2</count>
-			</li>
-			<li Class="RoomRequirement_ThingCount">
-				<thingDef>Column</thingDef>
-				<count>2</count>
-			</li>
-			<li Class="RoomRequirement_ThingAnyOf">
-				<things>
-					<li>Harp</li>
-					<li>Harpsichord</li>
-					<li>Piano</li>
-				</things>
-			</li>
-			<li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
-				<labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
-				<things>
-					<li>Brazier</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
-				</things>
-			</li>
-			<li Class="RoomRequirement_ForbiddenBuildings">
-				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
-				<buildingTags>
-					<li>Production</li>
-				</buildingTags>
-			</li>
-			<li Class="RoomRequirement_ForbiddenBuildings">
-				<labelKey>RoomRequirementNoBeds</labelKey>
-				<buildingTags>
-					<li>Bed</li>
-				</buildingTags>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
-				<labelKey>RoomRequirementNoAltars</labelKey>
-			</li>
-		</throneRoomRequirements>
 		<bedroomRequirements>
 			<li Class="RoomRequirement_Area">
 				<area>24</area>
@@ -321,21 +198,30 @@
 			</allowedDefs>
 		</foodRequirement>
 	</RoyalTitleDef>
-	<!-- 오메가-동업자 -->
+	<!-- 감마-동업자 -->
 	<RoyalTitleDef ParentName="MoyoCartelTitleBase">
-		<defName>Cartel_OmegaMember</defName>
-		<label>Collaborater: Omega</label>
-		<description>You are a high ranking officer of the Cartel surface division. Although limited, you have a permission to contact with the Cartel of the Lighthouse itself.</description>
-		<seniority>500</seniority>
+		<defName>Cartel_GammaMember</defName>
+		<label>Collaborater: Gamma</label>
+		<description>A core member of cartel's surface division. Gamma degree partners are indifferent from cartel officers. even having the right to dispatch strike teams.</description>
+		<seniority>400</seniority>
 		<favorCost>20</favorCost>
 		<minExpectation>Moderate</minExpectation>
 		<recruitmentResistanceOffset>25</recruitmentResistanceOffset>
 		<commonality>0</commonality>
-		<permitPointsAwarded>14</permitPointsAwarded>
+		<permitPointsAwarded>10</permitPointsAwarded>
 		<disabledWorkTags>
-			<li>Cleaning</li>
+			<li>ManualDumb</li>
+			<li>ManualSkilled</li>
+			<li>PlantWork</li>
+			<li>Mining</li>
 		</disabledWorkTags>
+		<permits>
+			<li>TradeCartel</li>
+		</permits>
 		<changeHeirQuestPoints>3000</changeHeirQuestPoints>
+		<disabledJoyKinds>
+			<li>Gaming_Dexterity</li>
+		</disabledJoyKinds>
 		<requiredApparel>
 			<li>
 				<bodyPartGroupsMatchAny>
@@ -352,11 +238,23 @@
 			</li>
 			<li>
 				<bodyPartGroupsMatchAny>
+					<li>Torso</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+					<li>RoyalTier5</li>
+				</requiredTags>
+				<allowedTags>
+					<li>PrestigeCombatGear</li>
+					<li>Psychic</li>
+				</allowedTags>
+			</li>
+			<li>
+				<bodyPartGroupsMatchAny>
 					<li>UpperHead</li>
 					<li>FullHead</li>
 				</bodyPartGroupsMatchAny>
 				<requiredTags>
-					<li>RoyalTier2</li>
+					<li>RoyalTier5</li>
 				</requiredTags>
 				<allowedTags>
 					<li>PrestigeCombatGear</li>
@@ -366,7 +264,10 @@
 		</requiredApparel>
 		<bedroomRequirements>
 			<li Class="RoomRequirement_Area">
-				<area>35</area>
+				<area>30</area>
+			</li>
+			<li Class="RoomRequirement_Impressiveness">
+				<impressiveness>70</impressiveness>
 			</li>
 			<li Class="RoomRequirement_TerrainWithTags">
 				<labelKey>RoomRequirementAllFloored</labelKey>
@@ -376,10 +277,18 @@
 				</tags>
 			</li>
 			<li Class="RoomRequirement_ThingAnyOf">
+				<disablingPrecepts>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+				</disablingPrecepts>
 				<things>
-					<li>DoubleBed</li>
 					<li>RoyalBed</li>
 				</things>
+			</li>
+			<li Class="RoomRequirement_Thing">
+				<thingDef>EndTable</thingDef>
+			</li>
+			<li Class="RoomRequirement_Thing">
+				<thingDef>Dresser</thingDef>
 			</li>
 			<li Class="RoomRequirement_ForbiddenBuildings">
 				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
@@ -388,17 +297,33 @@
 				</buildingTags>
 			</li>
 		</bedroomRequirements>
+		<foodRequirement>
+			<minQuality>MealLavish</minQuality>
+			<allowedTypes>Processed, Liquor</allowedTypes>
+			<allowedDefs>
+				<li>Ambrosia</li>
+				<li>Milk</li>
+				<li>RawBerries</li>
+				<li>InsectJelly</li>
+			</allowedDefs>
+		</foodRequirement>
+		<grantedAbilities>
+			<li>Speech</li>
+		</grantedAbilities>
+		<speechCooldown>900000</speechCooldown>
 	</RoyalTitleDef>
-	<RoyalTitleDef ParentName="BaseEmpireTitle">
-		<defName>CartelExecutive</defName>
-		<label>cartel division administrator</label>
-		<description>Administrator of cartel's surface division. field executives manage the surface divison's trades and operations.</description>
-		<seniority>700</seniority>
-		<minExpectation>High</minExpectation>
-		<requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
-		<recruitmentResistanceOffset>75</recruitmentResistanceOffset>
-		<commonality>1</commonality>
-		<suppressIdleAlert>true</suppressIdleAlert>
+	<!-- 오메가-동업자 -->
+	<RoyalTitleDef ParentName="MoyoCartelTitleBase">
+		<defName>Cartel_OmegaMember</defName>
+		<label>Collaborater: Omega</label>
+		<description>You are a high ranking officer of the Cartel surface division. Although limited, you have a permission to contact with the Cartel of the Lighthouse itself.</description>
+		<seniority>500</seniority>
+		<favorCost>20</favorCost>
+		<minExpectation>Moderate</minExpectation>
+		<recruitmentResistanceOffset>25</recruitmentResistanceOffset>
+		<commonality>0</commonality>
+		<permitPointsAwarded>14</permitPointsAwarded>
+		<changeHeirQuestPoints>3500</changeHeirQuestPoints>
 		<disabledJoyKinds>
 			<li>Gaming_Dexterity</li>
 		</disabledJoyKinds>
@@ -410,9 +335,7 @@
 			<li>Animals</li>
 		</disabledWorkTags>
 		<permits>
-			<li>TradeSettlement</li>
-			<li>TradeCaravan</li>
-			<li>TradeOrbital</li>
+			<li>TradeCartel</li>
 		</permits>
 		<requiredApparel>
 			<li>
@@ -468,51 +391,6 @@
 				</allowedTags>
 			</li>
 		</requiredApparel>
-		<throneRoomRequirements>
-			<li Class="RoomRequirement_HasAssignedThroneAnyOf">
-				<things>
-					<li>GrandThrone</li>
-				</things>
-			</li>
-			<li Class="RoomRequirement_Area">
-				<area>80</area>
-			</li>
-			<li Class="RoomRequirement_Impressiveness">
-				<impressiveness>160</impressiveness>
-			</li>
-			<li Class="RoomRequirement_TerrainWithTags">
-				<labelKey>RoomRequirementAllFineFloored</labelKey>
-				<tags>
-					<li>FineFloor</li>
-				</tags>
-			</li>
-			<li Class="RoomRequirement_ThingCount">
-				<thingDef>Column</thingDef>
-				<count>6</count>
-			</li>
-			<li Class="RoomRequirement_ThingCount">
-				<thingDef>Drape</thingDef>
-				<count>2</count>
-			</li>
-			<li Class="RoomRequirement_Thing">
-				<thingDef>Piano</thingDef>
-			</li>
-			<li Class="RoomRequirement_ForbiddenBuildings">
-				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
-				<buildingTags>
-					<li>Production</li>
-				</buildingTags>
-			</li>
-			<li Class="RoomRequirement_ForbiddenBuildings">
-				<labelKey>RoomRequirementNoBeds</labelKey>
-				<buildingTags>
-					<li>Bed</li>
-				</buildingTags>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
-				<labelKey>RoomRequirementNoAltars</labelKey>
-			</li>
-		</throneRoomRequirements>
 		<bedroomRequirements>
 			<li Class="RoomRequirement_Area">
 				<area>30</area>
@@ -565,6 +443,128 @@
 			<li>Speech</li>
 		</grantedAbilities>
 		<speechCooldown>600000</speechCooldown>
-		<maxPsylinkLevel>6</maxPsylinkLevel>
+	</RoyalTitleDef>
+	<RoyalTitleDef ParentName="MoyoCartelTitleBase">
+		<defName>CartelExecutive</defName>
+		<label>cartel division administrator</label>
+		<description>Administrator of cartel's surface division. field executives manage the surface divison's trades and operations.</description>
+		<seniority>600</seniority>
+		<recruitmentResistanceOffset>75</recruitmentResistanceOffset>
+		<commonality>0</commonality>
+		<minExpectation>Royal</minExpectation>
+		<requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+		<suppressIdleAlert>true</suppressIdleAlert>
+		<disabledJoyKinds>
+			<li>Gaming_Dexterity</li>
+		</disabledJoyKinds>
+		<disabledWorkTags>
+			<li>Commoner</li>
+		</disabledWorkTags>
+		<permits>
+			<li>TradeCartel</li>
+		</permits>
+		<requiredApparel>
+			<li>
+				<bodyPartGroupsMatchAny>
+					<li>Torso</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+					<li>RoyalTier2</li>
+				</requiredTags>
+				<allowedTags>
+					<li>PrestigeCombatGear</li>
+					<li>Psychic</li>
+				</allowedTags>
+			</li>
+			<li>
+				<bodyPartGroupsMatchAny>
+					<li>Torso</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+					<li>RoyalTier5</li>
+				</requiredTags>
+				<allowedTags>
+					<li>PrestigeCombatGear</li>
+					<li>Psychic</li>
+				</allowedTags>
+			</li>
+			<li>
+				<bodyPartGroupsMatchAny>
+					<li>Torso</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+					<li>RoyalTier6</li>
+				</requiredTags>
+				<allowedTags>
+					<li>PrestigeCombatGear</li>
+					<li>Psychic</li>
+				</allowedTags>
+			</li>
+			<li>
+				<bodyPartGroupsMatchAny>
+					<li>UpperHead</li>
+					<li>FullHead</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+					<li>RoyalTier7</li>
+				</requiredTags>
+				<allowedTags>
+					<li>PrestigeCombatGear</li>
+					<li>Psychic</li>
+				</allowedTags>
+			</li>
+		</requiredApparel>
+		<bedroomRequirements>
+			<li Class="RoomRequirement_Area">
+				<area>30</area>
+			</li>
+			<li Class="RoomRequirement_Impressiveness">
+				<impressiveness>80</impressiveness>
+			</li>
+			<li Class="RoomRequirement_TerrainWithTags">
+				<labelKey>RoomRequirementAllFineFloored</labelKey>
+				<tags>
+					<li>FineFloor</li>
+				</tags>
+			</li>
+			<li Class="RoomRequirement_ThingAnyOf">
+				<disablingPrecepts>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+				</disablingPrecepts>
+				<things>
+					<li>RoyalBed</li>
+				</things>
+			</li>
+			<li Class="RoomRequirement_Thing">
+				<thingDef>EndTable</thingDef>
+			</li>
+			<li Class="RoomRequirement_Thing">
+				<thingDef>Dresser</thingDef>
+			</li>
+			<li Class="RoomRequirement_ThingCount">
+				<thingDef>Drape</thingDef>
+				<count>1</count>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+				<buildingTags>
+					<li>Production</li>
+				</buildingTags>
+			</li>
+		</bedroomRequirements>
+		<foodRequirement>
+			<minQuality>MealLavish</minQuality>
+			<allowedTypes>Processed, Liquor</allowedTypes>
+			<allowedDefs>
+				<li>Ambrosia</li>
+				<li>Milk</li>
+				<li>RawBerries</li>
+				<li>InsectJelly</li>
+			</allowedDefs>
+		</foodRequirement>
+		<grantedAbilities>
+			<li>Speech</li>
+		</grantedAbilities>
+		<speechCooldown>600000</speechCooldown>
 	</RoyalTitleDef>
 </Defs>

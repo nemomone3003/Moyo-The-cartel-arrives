@@ -170,21 +170,21 @@
 		<cooldownDays>60</cooldownDays>
 	</RoyalTitlePermitDef>
 	<!--처형인 지원-->
-	<RoyalTitlePermitDef>
-		<defName>Cartel_Executioner</defName>
-		<label>Request Cartel executioner</label>
-		<description>Request the executioner to crush your foes.</description>
-		<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
-		<minTitle>Cartel_OmegaMember</minTitle>
-		<faction>Moyo_Cartel</faction>
-		<permitPointCost>4</permitPointCost>
-		<uiPosition>(0,6)</uiPosition>
-		<royalAid>
-			<favorCost>99</favorCost>
-			<pawnKindDef>Moyo_CartelLight_Acidifier</pawnKindDef>
-			<pawnCount>1</pawnCount>
-			<targetingRange>39.9</targetingRange>
-		</royalAid>
-		<cooldownDays>120</cooldownDays>
-	</RoyalTitlePermitDef>
+	<!-- <RoyalTitlePermitDef> -->
+		<!-- <defName>Cartel_Executioner</defName> -->
+		<!-- <label>Request Cartel executioner</label> -->
+		<!-- <description>Request the executioner to crush your foes.</description> -->
+		<!-- <workerClass>RoyalTitlePermitWorker_CallAid</workerClass> -->
+		<!-- <minTitle>Cartel_OmegaMember</minTitle> -->
+		<!-- <faction>Moyo_Cartel</faction> -->
+		<!-- <permitPointCost>4</permitPointCost> -->
+		<!-- <uiPosition>(0,6)</uiPosition> -->
+		<!-- <royalAid> -->
+			<!-- <favorCost>99</favorCost> -->
+			<!-- <pawnKindDef>Moyo_CartelLight_Acidifier</pawnKindDef> -->
+			<!-- <pawnCount>1</pawnCount> -->
+			<!-- <targetingRange>39.9</targetingRange> -->
+		<!-- </royalAid> -->
+		<!-- <cooldownDays>120</cooldownDays> -->
+	<!-- </RoyalTitlePermitDef> -->
 </Defs>
