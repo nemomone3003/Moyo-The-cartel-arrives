@@ -5,7 +5,7 @@
 		<rulePack>
 			<rulesFiles>
 				<li>CartelFactionFirst->Name/Cartel/Cartel_Faction_First</li>
-				<li>CartelFactionSecond->Name/Cartel/Cartel_Faction_First</li>
+				<li>CartelFactionSecond->Name/Cartel/Cartel_Faction_Second</li>
 			</rulesFiles>
 			<rulesStrings>
 				<li>r_name->[CartelFactionFirst] [CartelFactionSecond]</li>
