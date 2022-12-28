@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<!-- 카르텔 징집병 -->
+	<Moyo_CartelSoldier.title>카르텔 징집병</Moyo_CartelSoldier.title>
+	<Moyo_CartelSoldier.titleShort>징집병</Moyo_CartelSoldier.titleShort>
+	<Moyo_CartelSoldier.baseDesc>[PAWN_nameDef](은)는 카르텔에 징집된 병사입니다. 상황이 절박할 때면, 최저임금을 받으며 카르텔 아래에서 싸우는 것이 생존을 위한 가장 좋은 선택지일때도 있습니다.</Moyo_CartelSoldier.baseDesc>
+	<!-- 카르텔 용병 -->
+	<Moyo_CartelMerc.title>카르텔 용병</Moyo_CartelMerc.title>
+	<Moyo_CartelMerc.titleShort>용병</Moyo_CartelMerc.titleShort>
+	<Moyo_CartelMerc.baseDesc>[PAWN_nameDef](은)는 카르텔과 함께 싸우기로 계약한 용병입니다. 전투를 위해 단련된 [PAWN_pronoun]는 카르텔이 제공하는 여러 일자리를 통해 상당한 양의 수익을 얻을 수 있었습니다.</Moyo_CartelMerc.baseDesc>
+	<!-- 카르텔 타격대 -->
+	<Moyo_CartelStriker.title>카르텔 타격대</Moyo_CartelStriker.title>
+	<Moyo_CartelStriker.titleShort>타격대</Moyo_CartelStriker.titleShort>
+	<Moyo_CartelStriker.baseDesc>[PAWN_nameDef](은)는 카르텔 타격대의 일원입니다. 홀로 또는 [PAWN_pronoun]의 팀과 함께 파견되는 [PAWN_pronoun]는 카르텔의 더러운 일을 도맡아 처리하는 사람입니다.</Moyo_CartelStriker.baseDesc>
+	<Moyo_CartelStrikerRF.title>카르텔 타격대</Moyo_CartelStrikerRF.title>
+	<Moyo_CartelStrikerRF.titleShort>타격대</Moyo_CartelStrikerRF.titleShort>
+	<Moyo_CartelStrikerRF.baseDesc>[PAWN_nameDef](은)는 카르텔 타격대의 일원입니다. 홀로 또는 [PAWN_pronoun]의 팀과 함께 파견되는 [PAWN_pronoun]는 카르텔의 더러운 일을 도맡아 처리하는 사람입니다.</Moyo_CartelStrikerRF.baseDesc>
+	<!-- 카르텔 저격수 -->
+	<Moyo_CartelSniper.title>카르텔 저격수</Moyo_CartelSniper.title>
+	<Moyo_CartelSniper.titleShort>저격수</Moyo_CartelSniper.titleShort>
+	<Moyo_CartelSniper.baseDesc>[PAWN_nameDef](은)는 지상에서 활동하기 위해 훈련된 저격수입니다. [PAWN_pronoun]의 사격 실력은 그 누구에게도 둘째가지 않지만 등대 내부에서 저격수들은 좋은 대우를 받지 못합니다.</Moyo_CartelSniper.baseDesc>
+	<Moyo_CartelSniperRF.title>카르텔 저격수</Moyo_CartelSniperRF.title>
+	<Moyo_CartelSniperRF.titleShort>저격수</Moyo_CartelSniperRF.titleShort>
+	<Moyo_CartelSniperRF.baseDesc>[PAWN_nameDef](은)는 지상에서 활동하기 위해 훈련된 저격수입니다. [PAWN_pronoun]의 사격 실력은 그 누구에게도 둘째가지 않지만 등대 내부에서 저격수들은 좋은 대우를 받지 못합니다.</Moyo_CartelSniperRF.baseDesc>
+	
+	<!-- 카르텔 엘리트 저격수 -->	
+	<Moyo_CartelSniperRF_E.title>카르텔 정예 저격수</Moyo_CartelSniperRF_E.title>
+	<Moyo_CartelSniperRF_E.titleShort>정예 저격수</Moyo_CartelSniperRF_E.titleShort>
+	<Moyo_CartelSniperRF_E.baseDesc>[PAWN_nameDef]의 총알은 표적을 놓치지 않습니다. [PAWN_pronoun]는 카르텔 저격수들 중 가장 숙련된 일원 중 하나이며, 저격수들에게 좋은 대우를 하지 않는 카르텔도 [PAWN_pronoun]에 대해 함부로 말하는 것을 꺼립니다. [PAWN_pronoun]가 그들의 머리에 총을 조준한 채로 모든 걸 듣고 있을지도 모르니까요.</Moyo_CartelSniperRF_E.baseDesc>
+</LanguageData>

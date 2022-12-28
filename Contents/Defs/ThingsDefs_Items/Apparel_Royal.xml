@@ -8,7 +8,7 @@
 		<graphicData>
 			<texPath>Things/Apparel/MoyoCartelroyalSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>			
+			<drawSize>1</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<costList>
@@ -31,7 +31,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.2</MoveSpeed>
-			<SocialImpact>0.1</SocialImpact>	
+			<SocialImpact>0.1</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -59,7 +59,7 @@
 			<recipeUsers Inherit="False">
 				<li>TableMachining</li>
 			</recipeUsers>
-			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>			
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
@@ -68,18 +68,17 @@
 					<only>(1,1,1)</only>
 				</li>
 			</options>
-		</colorGenerator>	
+		</colorGenerator>
 	</ThingDef>
-
 	<!--로열 6티어 코트-->
 	<ThingDef ParentName="Moyo_ApparelBase" Name="Moyo_CartelRobeBase">
 		<defName>Moyo_CartelRobeA</defName>
-		<label>Cartel executive coat A</label>	
+		<label>Cartel executive coat A</label>
 		<description>A Peculiar looking coat made by the Cartel. Made with advanced matierals and is studier than it seems.\n\nSuch apparels costs a fortune even to a Cartel officer.</description>
 		<graphicData>
 			<texPath>Things/Apparel/MoyoCartelCoat1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>			
+			<drawSize>1</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
@@ -112,7 +111,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.1</SocialImpact>
-		</equippedStatOffsets>			
+		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Things/Apparel/MoyoCartelCoat</wornGraphicPath>
 			<bodyPartGroups>
@@ -139,20 +138,18 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
-	
 	<ThingDef ParentName="Moyo_CartelRobeBase">
 		<defName>Moyo_CartelRobeB</defName>
 		<label>Cartel executive coat B</label>
 		<graphicData>
 			<texPath>Things/Apparel/MoyoCartelCoatB1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>			
+			<drawSize>1</drawSize>
 		</graphicData>
 		<apparel>
 			<wornGraphicPath>Things/Apparel/MoyoCartelCoatB</wornGraphicPath>
 		</apparel>
 	</ThingDef>
-	
 	<!-- 초인병 슈트 -->
 	<ThingDef ParentName="Moyo_PowerArmorBase">
 		<defName>Moyo_CEsuit</defName>
@@ -203,6 +200,7 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<smeltable>false</smeltable>
 	</ThingDef>
 	<!-- 초인병 헬멧 -->
 	<ThingDef ParentName="Moyo_PowerHelmetBase">
@@ -249,6 +247,6 @@
 				</li>
 			</options>
 		</colorGenerator>
-	</ThingDef>		
-
+		<smeltable>false</smeltable>
+	</ThingDef>
 </Defs>

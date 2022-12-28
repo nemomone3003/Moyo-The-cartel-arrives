@@ -47,7 +47,6 @@
 				<commonality>0.05</commonality>
 			</li>
 		</backstoryFilters>
-		<geneticVariance>0.7</geneticVariance>
 		<apparelStuffFilter>
 			<thingDefs>
 				<li>Moyo_Depthweave</li>
@@ -172,7 +171,6 @@
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<settlementTexturePath>Icon/Moyo_CartelIcon</settlementTexturePath>
 		<factionIconPath>Icon/Moyo_CartelIcon</factionIconPath>
-		<factionNameMaker>CartelFactionNamer</factionNameMaker>
 		<fixedLeaderKinds>
 			<li>Moyo_CartelLeader</li>
 		</fixedLeaderKinds>		

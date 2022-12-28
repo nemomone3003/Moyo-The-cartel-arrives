@@ -8,7 +8,7 @@
 			<operations>
 				<!--moyo Heart, Tail-->
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_FarmChild"]/spawnCategories</xpath>
+					<xpath>/Defs/AlienRace.AlienBackstoryDef[defName="Moyo_FarmChild"]/spawnCategories</xpath>
 					<value>
 						<li>Moyo_CartelCombatant</li>
 						<li>Moyo_CartelBaseReinforce</li>
@@ -18,7 +18,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_Orphan"]/spawnCategories</xpath>
+					<xpath>/Defs/AlienRace.AlienBackstoryDef[defName="Moyo_Orphan"]/spawnCategories</xpath>
 					<value>
 						<li>Moyo_CartelCombatant</li>
 						<li>Moyo_CartelBaseReinforce</li>
@@ -28,7 +28,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_Dreamer"]/spawnCategories</xpath>
+					<xpath>/Defs/AlienRace.AlienBackstoryDef[defName="Moyo_Dreamer"]/spawnCategories</xpath>
 					<value>
 						<li>Moyo_CartelCombatant</li>
 						<li>Moyo_CartelBaseReinforce</li>
@@ -38,7 +38,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_Bully"]/spawnCategories</xpath>
+					<xpath>/Defs/AlienRace.AlienBackstoryDef[defName="Moyo_Bully"]/spawnCategories</xpath>
 					<value>
 						<li>Moyo_CartelCombatant</li>
 						<li>Moyo_CartelBaseReinforce</li>
@@ -48,7 +48,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_PettyTheif"]/spawnCategories</xpath>
+					<xpath>/Defs/AlienRace.AlienBackstoryDef[defName="Moyo_PettyTheif"]/spawnCategories</xpath>
 					<value>
 						<li>Moyo_CartelCombatant</li>
 						<li>Moyo_CartelBaseReinforce</li>
@@ -58,7 +58,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_HuntingAssistant"]/spawnCategories</xpath>
+					<xpath>/Defs/AlienRace.AlienBackstoryDef[defName="Moyo_HuntingAssistant"]/spawnCategories</xpath>
 					<value>
 						<li>Moyo_CartelCombatant</li>
 						<li>Moyo_CartelBaseReinforce</li>
@@ -68,7 +68,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_YoungJunkie"]/spawnCategories</xpath>
+					<xpath>/Defs/AlienRace.AlienBackstoryDef[defName="Moyo_YoungJunkie"]/spawnCategories</xpath>
 					<value>
 						<li>Moyo_CartelCombatant</li>
 						<li>Moyo_CartelBaseReinforce</li>
@@ -78,7 +78,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_SmugglerRunner"]/spawnCategories</xpath>
+					<xpath>/Defs/AlienRace.AlienBackstoryDef[defName="Moyo_SmugglerRunner"]/spawnCategories</xpath>
 					<value>
 						<li>Moyo_CartelCombatant</li>
 						<li>Moyo_CartelBaseReinforce</li>
@@ -88,7 +88,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_ChildSoldier"]/spawnCategories</xpath>
+					<xpath>/Defs/AlienRace.AlienBackstoryDef[defName="Moyo_ChildSoldier"]/spawnCategories</xpath>
 					<value>
 						<li>Moyo_CartelCombatant</li>
 						<li>Moyo_CartelBaseReinforce</li>
@@ -98,7 +98,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/AlienRace.BackstoryDef[defName="Moyo_VatgrownSoldier"]/spawnCategories</xpath>
+					<xpath>/Defs/AlienRace.AlienBackstoryDef[defName="Moyo_VatgrownSoldier"]/spawnCategories</xpath>
 					<value>
 						<li>Moyo_CartelCombatant</li>
 						<li>Moyo_CartelBaseReinforce</li>

@@ -10,17 +10,18 @@
 		<graphicData>
 			<texPath>Things/Weapons/MoyoCKatana</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>			
+			<drawSize>1</drawSize>
 		</graphicData>
 		<uiIconScale>1.5</uiIconScale>
 		<weaponTags Inherit="False">
 			<li>Moyo_CartelMeleePersona</li>
 		</weaponTags>
-		<tradeability>Sellable</tradeability>		
+		<tradeability>Sellable</tradeability>
 		<statBases>
 			<MarketValue>3000</MarketValue>
 			<Mass>2.5</Mass>
 		</statBases>
+		<smeltable>false</smeltable>
 		<tools>
 			<li>
 				<label>handle</label>
@@ -48,6 +49,6 @@
 				<cooldownTime>1.8</cooldownTime>
 				<armorPenetration>0.9</armorPenetration>
 			</li>
-		</tools>	
+		</tools>
 	</ThingDef>
 </Defs>
