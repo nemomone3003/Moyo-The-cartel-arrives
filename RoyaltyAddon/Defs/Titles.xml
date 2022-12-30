@@ -33,7 +33,7 @@
 		<minExpectation>Low</minExpectation>
 		<recruitmentResistanceOffset>15</recruitmentResistanceOffset>
 		<commonality>1</commonality>
-		<permitPointsAwarded>2</permitPointsAwarded>
+		<permitPointsAwarded>1</permitPointsAwarded>
 		<disabledWorkTags>
 			<li>Cleaning</li>
 		</disabledWorkTags>
@@ -116,7 +116,7 @@
 		<minExpectation>Moderate</minExpectation>
 		<recruitmentResistanceOffset>25</recruitmentResistanceOffset>
 		<commonality>1</commonality>
-		<permitPointsAwarded>6</permitPointsAwarded>
+		<permitPointsAwarded>4</permitPointsAwarded>
 		<disabledWorkTags>
 			<li>Cleaning</li>
 		</disabledWorkTags>
@@ -208,7 +208,7 @@
 		<minExpectation>Moderate</minExpectation>
 		<recruitmentResistanceOffset>25</recruitmentResistanceOffset>
 		<commonality>0</commonality>
-		<permitPointsAwarded>10</permitPointsAwarded>
+		<permitPointsAwarded>6</permitPointsAwarded>
 		<disabledWorkTags>
 			<li>ManualDumb</li>
 			<li>ManualSkilled</li>
@@ -322,7 +322,7 @@
 		<minExpectation>Moderate</minExpectation>
 		<recruitmentResistanceOffset>25</recruitmentResistanceOffset>
 		<commonality>0</commonality>
-		<permitPointsAwarded>14</permitPointsAwarded>
+		<permitPointsAwarded>7</permitPointsAwarded>
 		<changeHeirQuestPoints>3500</changeHeirQuestPoints>
 		<disabledJoyKinds>
 			<li>Gaming_Dexterity</li>

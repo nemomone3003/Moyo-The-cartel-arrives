@@ -38,7 +38,7 @@
 		<label>advanced drug drop</label>
 		<description>Request in a bundle of advanced deepblue drugs.</description>
 		<minTitle>Cartel_BetaMember</minTitle>
-		<permitPointCost>2</permitPointCost>
+		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0.9,0)</uiPosition>
 		<royalAid>
 			<itemsToDrop>
@@ -55,7 +55,7 @@
 		<label>medical supply drop</label>
 		<description>Request in a bundle of deepblue-medical supplies.</description>
 		<minTitle>Cartel_BetaMember</minTitle>
-		<permitPointCost>2</permitPointCost>
+		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,1)</uiPosition>
 		<royalAid>
 			<itemsToDrop>
@@ -87,7 +87,7 @@
 		<defName>Cartel_MachineDrop</defName>
 		<label>request cartel advanced component</label>
 		<description>Request 1 cartel advanced component.</description>
-		<minTitle>Cartel_BetaMember</minTitle>
+		<minTitle>Cartel_GammaMember</minTitle>
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,2)</uiPosition>
 		<royalAid>
